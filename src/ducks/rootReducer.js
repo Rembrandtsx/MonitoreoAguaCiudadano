@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import puntos from './puntos';
+import marcadores from './marcadores';
 
-const rootReducer = combineReducers({ puntos });
+const rootReducer = combineReducers({ marcadores });
 
 export default rootReducer;

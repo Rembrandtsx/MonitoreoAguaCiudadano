@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
-import Home from './components/home/Home';
+import Home from './Screens/home/Home';
 import About from './components/about/About';
 
 ReactGA.initialize('UA-000000000-0');
@@ -21,6 +21,7 @@ const Router = () => (
 
 export default Router;
 
+// Helper Google Analytics class:
 class GAListener extends Component {
 	static contextTypes = {
 		router: PropTypes.object
@@ -34,5 +35,8 @@ class GAListener extends Component {
 	sendPageView(location) {
 		ReactGA.set({ page: location.pathname });
 		ReactGA.pageview(location.pathname);
+	}
+	render() {
+		return this.props.children;
 	}
 }

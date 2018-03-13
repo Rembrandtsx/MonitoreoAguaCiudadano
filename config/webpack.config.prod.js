@@ -144,6 +144,7 @@ module.exports = {
 						include: paths.appSrc,
 						loader: require.resolve('babel-loader'),
 						options: {
+							plugins: [['styled-jsx/babel', { plugins: ['styled-jsx-plugin-sass'] }]],
 							compact: true
 						}
 					},
