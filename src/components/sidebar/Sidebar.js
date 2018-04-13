@@ -1,59 +1,55 @@
 import React, { Component } from 'react';
+
+import { Link, withRouter } from 'react-router-dom';
 import { colors, bp } from '../../theme';
 
 class Sidebar extends Component {
 	render() {
+		const { pathname } = this.props.location;
 		const { color_grey_dark_1, color_primary, color_primary_light, color_grey_light_1 } = colors;
 		const { bp_medium, bp_small } = bp;
 		return (
 			<nav className="sidebar">
 				<ul className="side-nav">
-					<li className="side-nav__item side-nav__item--active">
-						<a href="#" className="side-nav__link">
-							<svg className="side-nav__icon">
-								<use xlinkHref="img/sprite.svg#icon-home" />
-							</svg>
+					<li className={`side-nav__item ${pathname === '/' && 'side-nav__item--active'}`}>
+						<Link to="/" className="side-nav__link">
 							<span>Introducción</span>
-						</a>
+						</Link>
 					</li>
-					<li className="side-nav__item">
-						<a href="#" className="side-nav__link">
-							<svg className="side-nav__icon">
-								<use xlinkHref="img/sprite.svg#icon-map" />
-							</svg>
-							<span>Mapa</span>
-						</a>
+					<li
+						className={`side-nav__item subir_datos ${pathname === '/subir' &&
+							'side-nav__item--active'}`}>
+						<Link to="/subir" className="side-nav__link">
+							<span>Subir Datos</span>
+						</Link>
 					</li>
-					<li className="side-nav__item">
-						<a href="#" className="side-nav__link">
-							<svg className="side-nav__icon">
-								<use xlinkHref="img/sprite.svg#icon-aircraft-take-off" />
-							</svg>
-							<span>Informacion 1</span>
-						</a>
-					</li>
-					<li className="side-nav__item">
-						<a href="#" className="side-nav__link">
-							<svg className="side-nav__icon">
-								<use xlinkHref="img/sprite.svg#icon-key" />
-							</svg>
-							<span>Informacion 2</span>
-						</a>
+					<li className={`side-nav__item ${pathname === '/informacion' && 'side-nav__item--active'}`}>
+						<Link to="/informacion" className="side-nav__link">
+							<span>Informacion</span>
+						</Link>
 					</li>
 				</ul>
-				<style jsx>{`
+				<style jsx global>{`
 					.sidebar {
 						background-color: ${color_grey_dark_1};
-						flex: 0 0 18%;
 						display: flex;
-						flex-direction: column;
-						justify-content: space-between;
+						flex-direction: row;
+						justify-content: center;
+					}
+
+					.subir_datos {
+						@media ${bp_medium} {
+							display: none;
+						}
 					}
 
 					.side-nav {
 						font-size: 1.4rem;
 						list-style: none;
-						margin-top: 3.5rem;
+						margin-top: 1rem;
+						margin-bottom: 1rem;
+						display: flex;
+						justify-content: center;
 
 						@media ${bp_medium} {
 							display: flex;
@@ -62,15 +58,15 @@ class Sidebar extends Component {
 
 						&__item {
 							position: relative;
-
 							&:not(:last-child) {
-								margin-bottom: 0.5rem;
+								margin-right: 1rem;
 								@media ${bp_medium} {
 									margin: 0;
 								}
 							}
 
 							@media ${bp_medium} {
+								font-size: 1.8em;
 								flex: 1;
 							}
 						}
@@ -140,4 +136,4 @@ class Sidebar extends Component {
 	}
 }
 
-export default Sidebar;
+export default withRouter(Sidebar);

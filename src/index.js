@@ -8,7 +8,7 @@ import { logger } from 'redux-logger';
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from './ducks/rootReducer';
 
-import Router from './Router';
+import Content from './Content';
 
 import './index.css';
 
@@ -23,7 +23,7 @@ export const store = createStore(rootReducer, compose(applyMiddleware(...middlew
 
 ReactDOM.render(
 	<Provider store={store}>
-		<Router />
+		<Content />
 	</Provider>,
 	document.getElementById('root')
 );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { animateScroll as scroll } from 'react-scroll';
 import * as d3 from 'd3';
 
 import { avisoSeleccionarMarcadores, quitarAvisoSeleccionarMarcadores } from '../../../ducks/marcadores';
@@ -54,7 +55,7 @@ class Visualizacion extends Component {
 			height: 500,
 			width: 500,
 			margin_left: 34,
-			margin_top: 0,
+			margin_top: 10,
 			margin_right: 10,
 			margin_bottom: 40
 		};
@@ -72,6 +73,7 @@ class Visualizacion extends Component {
 
 		// XScale
 		const first_stamp = d3.min(filtered_markers, d => d.properties.date);
+		console.log(first_stamp);
 		const last_stamp = d3.max(filtered_markers, d => d.properties.date);
 		this.xScaleTime = d3
 			.scaleTime()
@@ -84,7 +86,7 @@ class Visualizacion extends Component {
 		this.yScale = d3
 			.scaleLinear()
 			.domain([min_point, max_point])
-			.range([height - margin_bottom, 0]);
+			.range([height + margin_top - margin_bottom, 0]);
 
 		// Poner puntos
 		g
@@ -96,7 +98,7 @@ class Visualizacion extends Component {
 			.attr('r', 2)
 			.attr('fill', 'red')
 			.attr('cx', d => this.xScaleTime(d.properties.date))
-			.attr('cy', height - margin_bottom)
+			.attr('cy', height - margin_top - margin_bottom)
 			.transition()
 			.duration(1000)
 			.attr('cy', d => this.yScale(d.properties.temp));
@@ -110,15 +112,15 @@ class Visualizacion extends Component {
 
 		g
 			.append('g')
-			.attr('id', 'y_axis')
-			.attr('transform', `translate(0, ${height - margin_bottom})`)
+			.attr('id', 'x_axis')
+			.attr('transform', `translate(0, ${margin_top + height - margin_bottom})`)
 			.call(xAxis);
 
 		const yAxis = d3.axisLeft().scale(this.yScale);
 		g
 			.append('g')
-			.attr('id', 'x_axis')
-			.attr('transform', `translate(${margin_left - 0.5},0)`)
+			.attr('id', 'y_axis')
+			.attr('transform', `translate(${margin_left - 0.5},${margin_top})`)
 			.call(yAxis);
 	};
 
@@ -128,8 +130,9 @@ class Visualizacion extends Component {
 				<g id="viz1" className="visualizacion" />
 				<style jsx>{`
 					.visualizacion_puntos {
-						height: 500px;
-						width: 500px;
+						margin-top: 15px;
+						height: 600px;
+						width: 100%;
 					}
 				`}</style>
 			</svg>

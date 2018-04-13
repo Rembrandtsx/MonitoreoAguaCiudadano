@@ -1,31 +1,60 @@
 import React, { Component } from 'react';
 import { colors, bp } from '../../theme';
 
+import logo_uniandes from './logo_uniandes.png';
+
 class Header extends Component {
 	render() {
 		const { color_grey_light_2 } = colors;
-		const { bp_smallest } = bp;
+		const { bp_small, bp_smallest, bp_medium } = bp;
 		return (
 			<header className="header">
-				<div>Aqui va posiblemente un logo</div>
+				<div className="logo1">Logo (posible)</div>
 
-				<h1>Electroagua</h1>
+				<h1>ELECTROAGUA</h1>
 
-				<img src="img/andesIcon.png" alt="Universidad de los Andes" className="logo" />
+				<div className="logo2">
+					<img src={logo_uniandes} alt="Universidad de los Andes" className="logo_uniandes" />
+				</div>
 				<style jsx>{`
+					.logo1,
+					h1,
+					.logo2 {
+						flex: 1;
+						text-align: center;
+					}
+
+					.logo1 {
+						margin-right: auto;
+					}
 					.header {
 						font-size: 1.4rem;
 						height: 7rem;
 						background-color: #fff;
 						border-bottom: 1px solid ${color_grey_light_2};
 						display: flex;
-						justify-content: space-between;
+						justify-content: center;
 						align-items: center;
+						@media ${bp_medium} {
+							h1 {
+								font-size: 2.5rem;
+							}
+						}
 
 						@media ${bp_smallest} {
 							flex-wrap: wrap;
 							align-content: space-around;
 							height: 11rem;
+						}
+					}
+
+					.logo_uniandes {
+						margin-top: 0.8rem;
+						margin-left: auto;
+						width: 150px;
+
+						@media ${bp_small} {
+							width: 80px;
 						}
 					}
 				`}</style>

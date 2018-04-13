@@ -20,6 +20,6 @@ export const bp = {
 	bp_largest: 'screen and (max-width: 75em)',
 	bp_large: 'screen and (max-width: 68.75em)',
 	bp_medium: 'screen and (max-width: 56.25em)',
-	bp_smal: 'screen and (max-width: 37.5em)',
+	bp_small: 'screen and (max-width: 37.5em)',
 	bp_smallest: 'screen and (max-width: 31.25em)'
 };

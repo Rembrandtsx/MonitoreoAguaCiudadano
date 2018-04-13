@@ -4,17 +4,28 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
 import Home from './Screens/home/Home';
-import About from './components/about/About';
+import About from './Screens/about/About';
+import Subir from './Screens/subir/Subir';
 
 ReactGA.initialize('UA-000000000-0');
 
-const Router = () => (
+const Router = ({ children }) => (
 	<BrowserRouter>
 		<GAListener>
-			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route path="/about" component={About} />
-			</Switch>
+			{children}
+			<main className="main">
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route path="/about" component={About} />
+					<Route path="/subir" component={Subir} />
+				</Switch>
+			</main>
+			<style jsx>{`
+				.main {
+					background: #fff;
+					flex: 1;
+				}
+			`}</style>
 		</GAListener>
 	</BrowserRouter>
 );
