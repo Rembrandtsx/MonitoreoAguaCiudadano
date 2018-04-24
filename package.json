@@ -7,10 +7,10 @@
 		"@turf/turf": "^5.1.6",
 		"autoprefixer": "7.1.6",
 		"axios": "^0.18.0",
-		"babel-core": "6.26.0",
 		"babel-eslint": "7.2.3",
 		"babel-jest": "20.0.3",
 		"babel-loader": "7.1.2",
+		"babel-polyfill": "^6.26.0",
 		"babel-preset-react-app": "^3.1.1",
 		"babel-runtime": "6.26.0",
 		"case-sensitive-paths-webpack-plugin": "2.1.1",
@@ -50,6 +50,7 @@
 		"react-dom": "^16.2.0",
 		"react-dropzone": "^4.2.9",
 		"react-ga": "^2.4.1",
+		"react-map-gl": "^3.2.6",
 		"react-redux": "^5.0.7",
 		"react-router-dom": "^4.2.2",
 		"react-scroll": "^1.7.7",
@@ -70,18 +71,22 @@
 	},
 	"scripts": {
 		"start": "node scripts/start.js",
-		"build":
-			"node scripts/build.js && cp .s3-website.json build/.s3-website.json && cd build && source ~/.aws/credentials && s3-website deploy",
+		"build": "node scripts/build.js && cp .s3-website.json build/.s3-website.json && cd build && source ~/.aws/credentials && s3-website deploy",
 		"test": "node scripts/test.js --env=jsdom",
 		"build_primary": "node scripts/build.js"
 	},
 	"devDependencies": {
+		"babel-core": "^6.26.0",
 		"dotenv": "^5.0.1",
 		"node-sass": "^4.7.2"
 	},
 	"jest": {
-		"collectCoverageFrom": ["src/**/*.{js,jsx,mjs}"],
-		"setupFiles": ["<rootDir>/config/polyfills.js"],
+		"collectCoverageFrom": [
+			"src/**/*.{js,jsx,mjs}"
+		],
+		"setupFiles": [
+			"<rootDir>/config/polyfills.js"
+		],
 		"testMatch": [
 			"<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
 			"<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
@@ -93,14 +98,26 @@
 			"^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
 			"^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
 		},
-		"transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"],
+		"transformIgnorePatterns": [
+			"[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+		],
 		"moduleNameMapper": {
 			"^react-native$": "react-native-web"
 		},
-		"moduleFileExtensions": ["web.js", "mjs", "js", "json", "web.jsx", "jsx", "node"]
+		"moduleFileExtensions": [
+			"web.js",
+			"mjs",
+			"js",
+			"json",
+			"web.jsx",
+			"jsx",
+			"node"
+		]
 	},
 	"babel": {
-		"presets": ["react-app"]
+		"presets": [
+			"react-app"
+		]
 	},
 	"eslintConfig": {
 		"extends": "react-app"

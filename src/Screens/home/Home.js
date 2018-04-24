@@ -10,6 +10,7 @@ import Mapa from '../../components/home/deck_mapa/mapa';
 import bath from './patrocinadores/bath.png';
 import colciencias from './patrocinadores/colciencias.png';
 import newton from './patrocinadores/newton.png';
+import Footer from '../../components/footer/Footer';
 
 class Content extends Component {
 	render() {
@@ -17,134 +18,123 @@ class Content extends Component {
 		const { color_grey_light_1, color_grey_light_2, shadow_light } = colors;
 		const height = this.props.aviso ? '60rem' : '120rem';
 		return (
-			<div className="detail">
-				<div className="description">
-					<p className="title">
-						Water Monitoring in Colombian Vulnerable Communities in a Post-Conflict Scenario
-					</p>
-					<p className="paragraph">
-						Desarrollar una herramienta rentable de que nos permita conocer las condiciones de calidad
-						del agua en comunidades vulnerables. Con esta herramienta se busca poder monitorear las
-						cuencas hidrográficas permitiéndonos generar alertas tempranas ante posibles fuentes de
-						contaminación en las cuencas. El desarrollo del proyecto se realiza con colaboración de la
-						universidad de Bath del Reino Unido donde por medio de diferentes tecnologías se quiere
-						conocer el estado del agua.
-					</p>
-				</div>
-				<div className="description">
-					<p className="paragraph">Puede hacer un poligono sobre los datos con el icono a la derecha:</p>
-					<div className="map_container">
-						<Mapa />
-						{/* <Visualizacion /> */}
-					</div>
-				</div>
-				{process.env.NODE_ENV === 'production' && (
-					<div className="description video_container">
-						<iframe className="video" height="100%" src="https://www.youtube.com/embed/IonNAynjKoI" />
-					</div>
-				)}
-				<div className="description">
-					<p className="paragraph">Patrocinado por:</p>
-					<div className="patrocinadores">
-						<div className="img_container">
-							<img src={bath} alt="" className="patrocinador" />
-						</div>
-						<div className="img_container">
-							<img src={colciencias} alt="" className="patrocinador" />
-						</div>
-						<div className="img_container">
-							<img src={newton} alt="" className="patrocinador" />
+			<div>
+				<div className="detail">
+					<div className="description">
+						<div className="map_container">
+							<Mapa />
+							{/* <Visualizacion /> */}
 						</div>
 					</div>
-				</div>
-				<style jsx>{`
-					.detail {
-						font-size: 1.4rem;
-						display: flex;
-						flex-direction: column;
-						padding: 4.5rem;
-						background-color: ${color_grey_light_1};
-						border-bottom: 1px solid ${color_grey_light_2};
+					{process.env.NODE_ENV === 'production' && (
+						<div className="description video_container">
+							<iframe className="video" height="100%" src="https://www.youtube.com/embed/IonNAynjKoI" />
+						</div>
+					)}
+					<div className="description">
+						<div className="patrocinadores">
+							<div className="img_container">
+								<img src={bath} alt="" className="patrocinador" />
+							</div>
+							<div className="img_container">
+								<img src={colciencias} alt="" className="patrocinador" />
+							</div>
+							<div className="img_container">
+								<img src={newton} alt="" className="patrocinador" />
+							</div>
+						</div>
+					</div>
 
-						&:not(:last-child) {
-							margin-bottom: 10rem;
+					<style jsx>{`
+						.detail {
+							font-size: 1.4rem;
+							display: flex;
+							flex-direction: column;
+							padding: 4.5rem;
+							background-color: ${color_grey_light_1};
+							border-bottom: 1px solid ${color_grey_light_2};
+
+							&:not(:last-child) {
+								/* margin-bottom: 10rem; */
+							}
+
+							@media ${bp_medium} {
+								padding: 3rem;
+							}
+
+							@media ${bp_small} {
+								flex-direction: column;
+							}
 						}
 
-						@media ${bp_medium} {
+						.title {
+							font-weight: bold;
+							font-style: italic;
+						}
+
+						.description {
+							font-size: 1.4rem;
+							background-color: #fff;
+							box-shadow: ${shadow_light};
 							padding: 3rem;
+							padding: 4.5rem;
+
+							&:not(:last-child) {
+								margin-bottom: 5rem;
+							}
+
+							@media ${bp_medium} {
+								padding: 2rem;
+								margin-bottom: 3rem;
+							}
+
+							@media ${bp_small} {
+								margin-right: 0;
+							}
 						}
 
-						@media ${bp_small} {
+						.map_container {
+							transition: height 4s;
+							height: ${height};
+						}
+
+						.patrocinadores {
+							display: flex;
+							justify-content: space-around;
+
+							@media ${bp_large} {
+								flex-direction: column;
+								align-items: center;
+							}
+						}
+
+						.patrocinador {
+							width: 20rem;
+							height: auto;
+						}
+
+						.img_container {
+							display: flex;
 							flex-direction: column;
-						}
-					}
-
-					.title {
-						font-weight: bold;
-						font-style: italic;
-					}
-
-					.description {
-						font-size: 1.4rem;
-						background-color: #fff;
-						box-shadow: ${shadow_light};
-						padding: 3rem;
-						padding: 4.5rem;
-
-						&:not(:last-child) {
-							margin-bottom: 5rem;
+							justify-content: center;
 						}
 
-						@media ${bp_medium} {
-							padding: 2rem;
-							margin-bottom: 3rem;
+						.video_container {
+							display: flex;
+							justify-content: center;
 						}
 
-						@media ${bp_small} {
-							margin-right: 0;
+						.video {
+							height: 600px;
+							width: 80%;
+
+							@media ${bp_medium} {
+								width: 100%;
+							}
 						}
-					}
-
-					.map_container {
-						transition: height 4s;
-						height: ${height};
-					}
-
-					.patrocinadores {
-						display: flex;
-						justify-content: space-around;
-
-						@media ${bp_large} {
-							flex-direction: column;
-							align-items: center;
-						}
-					}
-
-					.patrocinador {
-						width: 20rem;
-						height: auto;
-					}
-
-					.img_container {
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-					}
-
-					.video_container {
-						display: flex;
-						justify-content: center;
-					}
-
-					.video {
-						height: 600px;
-						width: 80%;
-
-						@media ${bp_medium} {
-							width: 100%;
-						}
-					}
-				`}</style>
+					`}</style>
+				</div>
+				<Footer />
 			</div>
 		);
 	}

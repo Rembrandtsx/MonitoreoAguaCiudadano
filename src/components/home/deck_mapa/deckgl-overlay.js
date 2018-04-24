@@ -27,7 +27,7 @@ export default class DeckGLOverlay extends Component {
 		return {
 			longitude: -74.063644,
 			latitude: 4.624335,
-			zoom: 8,
+			zoom: 4,
 			// maxZoom: 20,
 			pitch: 0,
 			bearing: 0
@@ -110,6 +110,7 @@ export default class DeckGLOverlay extends Component {
 					neighbors.forEach(neighbor => {
 						if (neighbor === p) {
 							p.zoomLevels[z] = {
+								neighbors_length: neighbors.length,
 								icon: getIconName(neighbors.length),
 								size: getIconSize(neighbors.length),
 								points: neighbors

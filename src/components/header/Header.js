@@ -9,13 +9,13 @@ class Header extends Component {
 		const { bp_small, bp_smallest, bp_medium } = bp;
 		return (
 			<header className="header">
-				<div className="logo1">Logo (posible)</div>
-
-				<h1>ELECTROAGUA</h1>
-
-				<div className="logo2">
+				<div className="logo1">
 					<img src={logo_uniandes} alt="Universidad de los Andes" className="logo_uniandes" />
 				</div>
+
+				<h1>Monitoreo de Agua</h1>
+
+				<div className="logo2" />
 				<style jsx>{`
 					.logo1,
 					h1,
@@ -25,15 +25,17 @@ class Header extends Component {
 					}
 
 					.logo1 {
+						margin-left: 10px;
+						text-align: left;
 						margin-right: auto;
 					}
 					.header {
 						font-size: 1.4rem;
-						height: 7rem;
+						height: 8rem;
 						background-color: #fff;
 						border-bottom: 1px solid ${color_grey_light_2};
 						display: flex;
-						justify-content: center;
+						justify-content: space-around;
 						align-items: center;
 						@media ${bp_medium} {
 							h1 {
@@ -51,7 +53,7 @@ class Header extends Component {
 					.logo_uniandes {
 						margin-top: 0.8rem;
 						margin-left: auto;
-						width: 150px;
+						width: 170px;
 
 						@media ${bp_small} {
 							width: 80px;

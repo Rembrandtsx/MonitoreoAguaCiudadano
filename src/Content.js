@@ -23,7 +23,6 @@ class Content extends Component {
 						<Sidebar />
 					</Router>
 				</div>
-				<Footer />
 				<style jsx>{`
 					.container {
 						max-width: 125rem;

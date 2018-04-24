@@ -23,9 +23,29 @@ class Sidebar extends Component {
 							<span>Subir Datos</span>
 						</Link>
 					</li>
-					<li className={`side-nav__item ${pathname === '/informacion' && 'side-nav__item--active'}`}>
+					{/* <li className={`side-nav__item ${pathname === '/informacion' && 'side-nav__item--active'}`}>
 						<Link to="/informacion" className="side-nav__link">
 							<span>Informacion</span>
+						</Link>
+					</li> */}
+					<li className={`side-nav__item ${pathname === '/el-proyecto' && 'side-nav__item--active'}`}>
+						<Link to="/el-proyecto" className="side-nav__link">
+							<span>El Proyecto</span>
+						</Link>
+					</li>
+					<li className={`side-nav__item ${pathname === '/equipo' && 'side-nav__item--active'}`}>
+						<Link to="/equipo" className="side-nav__link">
+							<span>Equipo de Medición</span>
+						</Link>
+					</li>
+					<li className={`side-nav__item ${pathname === '/app' && 'side-nav__item--active'}`}>
+						<Link to="/app" className="side-nav__link">
+							<span>App</span>
+						</Link>
+					</li>
+					<li className={`side-nav__item ${pathname === '/contacto' && 'side-nav__item--active'}`}>
+						<Link to="/contacto" className="side-nav__link">
+							<span>Contacto</span>
 						</Link>
 					</li>
 				</ul>

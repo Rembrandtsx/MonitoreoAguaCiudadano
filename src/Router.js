@@ -4,8 +4,12 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
 import Home from './Screens/home/Home';
-import About from './Screens/about/About';
 import Subir from './Screens/subir/Subir';
+import About from './Screens/about/About';
+import Equipo from './Screens/equipo/Equipo';
+import Proyecto from './Screens/proyecto/Proyecto';
+import App from './Screens/app/App';
+import Contacto from './Screens/contacto/Contacto';
 
 ReactGA.initialize('UA-000000000-0');
 
@@ -18,6 +22,10 @@ const Router = ({ children }) => (
 					<Route exact path="/" component={Home} />
 					<Route path="/about" component={About} />
 					<Route path="/subir" component={Subir} />
+					<Route path="/el-proyecto" component={Proyecto} />
+					<Route path="/equipo" component={Equipo} />
+					<Route path="/app" component={App} />
+					<Route path="/contacto" component={Contacto} />
 				</Switch>
 			</main>
 			<style jsx>{`

@@ -1,0 +1,7 @@
+.mapboxgl-popup {
+	max-width: 1000px !important;
+}
+
+.mapboxgl-popup-content {
+	overflow-y: scroll !important;
+}
