@@ -27,6 +27,25 @@ class Subir extends Component {
 				// Take only first sheet:
 				var sheet_1 = wb.Sheets[wb.SheetNames[0]];
 				var ws_json = XLSX.utils.sheet_to_json(sheet_1);
+				ws_json = ws_json.map(dato => {
+					// Se pueden datos en español
+					if (dato.longitud) {
+						dato.longitude = dato.longitud;
+					}
+					if (dato.latitud) {
+						dato.latitude = dato.latitud;
+					}
+					if (dato.conductividad) {
+						dato.conduct = dato.conductividad;
+					}
+					if (dato.temperatura) {
+						dato.temp = dato.temperatura;
+					}
+					if (dato.hora_y_fecha) {
+						dato.timestamp = dato.hora_y_fecha;
+					}
+					return dato;
+				});
 				subirDatos(ws_json);
 			} catch (e) {
 				console.log(e);
@@ -66,7 +85,7 @@ class Subir extends Component {
 							Los datos en el CSV deben tener exactamente el siguiente formato (incluyento los nombres en
 							la primera fila):
 						</p>
-						<img src={captura} />
+						<img src={captura} className="captura" />
 					</div>
 					<div className="dropzone">
 						<Dropzone
@@ -126,6 +145,10 @@ class Subir extends Component {
 						.instrucciones,
 						.instrucciones_dropzone {
 							font-size: 1.6em;
+						}
+
+						.captura {
+							max-width: 800px;
 						}
 
 						.dropzone {

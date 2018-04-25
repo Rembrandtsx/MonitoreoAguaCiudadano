@@ -12,8 +12,9 @@ class Header extends Component {
 				<div className="logo1">
 					<img src={logo_uniandes} alt="Universidad de los Andes" className="logo_uniandes" />
 				</div>
-
-				<h1>Monitoreo de Agua</h1>
+				<div className="page-header">
+					<h1>Monitoreo de Agua</h1>
+				</div>
 
 				<div className="logo2" />
 				<style jsx>{`
@@ -22,6 +23,7 @@ class Header extends Component {
 					.logo2 {
 						flex: 1;
 						text-align: center;
+						color: black;
 					}
 
 					.logo1 {

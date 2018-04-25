@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Mapa from '../../components/home/deck_mapa/mapa';
 import { bp, colors } from '../../theme';
-import Proyecto1 from './proyectos/Proyecto1';
-import Proyecto2 from './proyectos/Proyecto2';
-import Proyecto3 from './proyectos/Proyecto3';
+import Proyecto1 from './proyectos/proyecto1/Proyecto1';
+import Proyecto2 from './proyectos/proyecto2/Proyecto2';
+import Proyecto3 from './proyectos/proyecto3/Proyecto3';
+import Footer from '../../components/footer/Footer';
 
 class Proyecto extends Component {
 	state = {
@@ -82,7 +83,7 @@ class Proyecto extends Component {
 						position: absolute;
 						top: 0;
 						left: 0;
-						height: 100%;
+						height: 120%;
 						width: 3px;
 						background-color: ${color_primary};
 						transform: scaleY(0);
@@ -178,6 +179,7 @@ class Proyecto extends Component {
 						}
 					}
 				`}</style>
+				<Footer />
 			</div>
 		);
 	}
