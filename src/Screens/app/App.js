@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { bp, colors } from '../../theme';
 import app_store from './images/app_store.svg';
 import play_store from './images/google_play.png';
+import pantallazo from './images/pantallazo.png';
 import Footer from '../../components/footer/Footer';
 
 class App extends Component {
@@ -11,6 +12,15 @@ class App extends Component {
 		return (
 			<div>
 				<div className="detail">
+					<div className="description">
+						Por medio de esta aplicación el usuario va poder tomar las mediciones y registrarlas en la
+						plataforma, así como visualizar las variables medidas.
+						<br />
+						<br />
+						<center>
+							<img className="" src={pantallazo} />
+						</center>
+					</div>
 					<div className="description">
 						<p>
 							Certificado de Registro del software de la referencia ante la Dirección Nacional de Derecho
@@ -53,7 +63,7 @@ class App extends Component {
 							box-shadow: ${shadow_light};
 							padding: 3rem;
 							padding: 4.5rem;
-
+							color: black;
 							&:not(:last-child) {
 								margin-bottom: 5rem;
 							}

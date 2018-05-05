@@ -46,7 +46,6 @@ class Popup extends Component {
 		} = this.props;
 		const { bp_small, bp_medium } = bp;
 		const { actual } = this.state;
-		console.log(data);
 		return (
 			<div className="marcador">
 				<div className="controles">
@@ -99,8 +98,8 @@ class Popup extends Component {
 							titulo="Oxigeno Disuelto"
 						/>
 						<CustomBar {...this.props} dataKey="temp" label_y="Temperatura (°C)" titulo="Temperatura" />
-						<CustomBar {...this.props} dataKey="pH" titulo="pH" />
-						<CustomBar {...this.props} dataKey="hg" titulo="HG" />
+						<CustomBar {...this.props} dataKey="pH" label_y="pH" titulo="pH" />
+						<CustomBar {...this.props} dataKey="hg" label_y="hg" titulo="HG" />
 					</div>
 				)}
 				{actual === 'scatter' && (
@@ -119,7 +118,7 @@ class Popup extends Component {
 							titulo="Temperatura"
 						/>
 						<CustomScatter {...this.props} dataKey="pH" label_y="pH" titulo="pH" />
-						<CustomScatter {...this.props} dataKey="hg" titulo="HG" />
+						<CustomScatter {...this.props} dataKey="hg" label_y="hg" titulo="HG" />
 					</div>
 				)}
 				{actual === 'line' && (

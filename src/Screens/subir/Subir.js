@@ -4,8 +4,11 @@ import XLSX from 'xlsx';
 import axios from 'axios';
 
 import { ROOT_URL } from '../../components/home/mapa_poligono/Mapa';
+import { bp, colors } from '../../theme';
+
 import captura from './captura.png';
 import Footer from '../../components/footer/Footer';
+import plantilla from './plantilla.csv';
 
 let dropzoneRef;
 class Subir extends Component {
@@ -41,8 +44,8 @@ class Subir extends Component {
 					if (dato.temperatura) {
 						dato.temp = dato.temperatura;
 					}
-					if (dato.hora_y_fecha) {
-						dato.timestamp = dato.hora_y_fecha;
+					if (dato.fecha_y_hora) {
+						dato.timestamp = dato.fecha_y_hora;
 					}
 					return dato;
 				});
@@ -73,74 +76,103 @@ class Subir extends Component {
 	};
 
 	render() {
+		const { bp_large, bp_medium, bp_small } = bp;
+		const { color_grey_light_1, color_grey_light_2, shadow_light } = colors;
+
 		return (
 			<div>
 				<div className="subir">
-					<div className="instrucciones">
-						<p>
-							Aqui podrás subir datos manualmente desde un CSV. Si tienes los datos en un excel, lo mejor
-							sera guardar la hoja como un CSV.
-						</p>
-						<p>
-							Los datos en el CSV deben tener exactamente el siguiente formato (incluyento los nombres en
-							la primera fila):
-						</p>
-						<img src={captura} className="captura" />
-					</div>
-					<div className="dropzone">
-						<Dropzone
-							accept=".csv"
-							onDrop={this.onDrop}
-							multiple={false}
-							ref={node => {
-								dropzoneRef = node;
-							}}>
-							<p className="instrucciones_dropzone">
-								Arrastra el archivo CSV de los datos o haz click aquí
+					<div className="description">
+						<div className="instrucciones">
+							<p>
+								Aqui podrás subir datos manualmente desde un archivo Excel en formato CSV. Los datos
+								deben tener el formato que aparece en este ejemplo:
 							</p>
-						</Dropzone>
-						<div className="boton_manual">
-							<button
-								type="button"
-								className="btn btn-primary"
-								onClick={() => {
-									dropzoneRef.open();
-								}}>
-								Subir archivo CSV
-							</button>
+							<img src={captura} className="captura" />
+							<p>
+								Puede descargar <a href={plantilla}>esta plantilla</a> como ejemplo
+							</p>
 						</div>
+						<div className="dropzone">
+							<Dropzone
+								accept=".csv"
+								onDrop={this.onDrop}
+								multiple={false}
+								ref={node => {
+									dropzoneRef = node;
+								}}>
+								<p className="instrucciones_dropzone">
+									Arrastra el archivo CSV de los datos o haz click aquí
+								</p>
+							</Dropzone>
+							<div className="boton_manual">
+								<button
+									type="button"
+									className="btn btn-primary"
+									onClick={() => {
+										dropzoneRef.open();
+									}}>
+									Subir archivo CSV
+								</button>
+							</div>
+						</div>
+
+						<div className="errores">
+							<div>
+								{this.state.errores.length > 0 && `Se encontraron ${this.state.errores.length} errores:`}
+							</div>
+							{this.state.errores.map(error => {
+								return (
+									<div key={error.row_num}>
+										<span className="error fa fa-exclamation" />
+										Ocurrió un error subiendo el dato en la fila: {error.row_num + 1}. El error fue:{' '}
+										<i className="error">{error.err}</i>
+									</div>
+								);
+							})}
+						</div>
+						<div className="exitos">
+							<div>
+								{this.state.exitos.length > 0 && `Se subieron ${this.state.exitos.length} registros:`}
+							</div>
+							{this.state.exitos.map(exito => {
+								return (
+									<div key={exito.row_num}>
+										<span className="exito fa fa-check" />
+										Registro de la fila: {exito.row_num + 1} subido exitosamente
+									</div>
+								);
+							})}
+						</div>
+						<p>Los parametros tienen la siguiente explicación:</p>
+						<ul className="indent">
+							<li>
+								fecha_y_hora: La fecha y hora en la cual fue tomado el dato, en el formato exacto
+								"DD/MM/AAAA HH:mm:ss"
+							</li>
+							<li>longitud: La longitud de la ubicación en donde fue tomado el dato</li>
+							<li>latitud: La latitud de la ubicación en donde fue tomado el dato</li>
+							<li>imei: El código único que referencia al celular que tomo el dato</li>
+							<li>hg: Mercurio (adimensional)</li>
+							<li>temperatura: Temp (°C)</li>
+							<li>conductividad: Conductividad (uS/cm)</li>
+							<li>od: Oxigeno disuelto (mg/L)</li>
+							<li>pH: pH (adimensional)</li>
+							<li>
+								region: La región a la cual pertenecen los datos:
+								<ul className="indent">
+									<li>1: Santurban</li>
+									<li>2: Teusaca</li>
+									<li>3: Amazonas</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 
-					<div className="errores">
-						<div>
-							{this.state.errores.length > 0 && `Se encontraron ${this.state.errores.length} errores:`}
-						</div>
-						{this.state.errores.map(error => {
-							return (
-								<div key={error.row_num}>
-									<span className="error fa fa-exclamation" />
-									Ocurrió un error subiendo el dato en la fila: {error.row_num + 1}. El error fue:{' '}
-									<i className="error">{error.err}</i>
-								</div>
-							);
-						})}
-					</div>
-					<div className="exitos">
-						<div>
-							{this.state.exitos.length > 0 && `Se subieron ${this.state.exitos.length} registros:`}
-						</div>
-						{this.state.exitos.map(exito => {
-							return (
-								<div key={exito.row_num}>
-									<span className="exito fa fa-check" />
-									Registro de la fila: {exito.row_num + 1} subido exitosamente
-								</div>
-							);
-						})}
-					</div>
 					<style jsx>{`
 						.subir {
 							padding: 20px;
+							color: black;
 						}
 						.instrucciones,
 						.instrucciones_dropzone {
@@ -171,6 +203,31 @@ class Subir extends Component {
 						.exito {
 							color: green;
 							padding-right: 5px;
+						}
+
+						.indent {
+							margin-left: 30px;
+						}
+
+						.description {
+							font-size: 1.4rem;
+							background-color: #fff;
+							box-shadow: ${shadow_light};
+							padding: 3rem;
+							padding: 4.5rem;
+
+							&:not(:last-child) {
+								margin-bottom: 5rem;
+							}
+
+							@media ${bp_medium} {
+								padding: 2rem;
+								margin-bottom: 3rem;
+							}
+
+							@media ${bp_small} {
+								margin-right: 0;
+							}
 						}
 					`}</style>
 				</div>

@@ -31,16 +31,23 @@ class Sidebar extends Component {
 					{/* <!-- Collect the nav links, forms, and other content for toggling --> */}
 					<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul className="nav navbar-nav">
-							<li className={`${pathname === '/' && 'active'}`}>
-								<Link to="/">INICIO</Link>
+							<li className={`dropdown ${pathname === '/' && 'active'}`}>
+								<Link to="/">
+									INICIO <b className="caret" />
+								</Link>
+								<ul className="dropdown-menu multi-level">
+									<li className="">
+										<Link to="/equipo-de-trabajo">Equipo</Link>
+									</li>
+								</ul>
 							</li>
-							<li className={`dropdown ${pathname === '/comunidades' && 'active'}`}>
-								<a href="#" className="dropdown-toggle" data-toggle="dropdown">
+							<li className={`dropdown ${pathname.startsWith('/comunidades') && 'active'}`}>
+								<Link to="/comunidades" className="dropdown-toggle" data-toggle="dropdown">
 									COMUNIDADES <b className="caret" />
-								</a>
+								</Link>
 								<ul className="dropdown-menu multi-level">
 									<li className="dropdown-submenu">
-										<a href="#">TEUSACA</a>
+										<Link to="/comunidades-teusaca">TEUSACA</Link>
 										<ul className="dropdown-menu">
 											<li>
 												<a href="">Mapa</a>
@@ -57,10 +64,38 @@ class Sidebar extends Component {
 										</ul>
 									</li>
 									<li>
-										<a href="#">SANTURBAN</a>
+										<Link to="/comunidades-santurban">SANTURBAN</Link>
+										<ul className="dropdown-menu">
+											<li>
+												<a href="">Mapa</a>
+											</li>
+											<li>
+												<a href="">Actividades</a>
+											</li>
+											<li>
+												<a href="">Colaboradores</a>
+											</li>
+											<li>
+												<a href="">Patrocinadores</a>
+											</li>
+										</ul>
 									</li>
 									<li>
-										<a href="#">LETICIA</a>
+										<Link to="/comunidades-amazonas">AMAZONAS</Link>
+										<ul className="dropdown-menu">
+											<li>
+												<a href="">Mapa</a>
+											</li>
+											<li>
+												<a href="">Actividades</a>
+											</li>
+											<li>
+												<a href="">Colaboradores</a>
+											</li>
+											<li>
+												<a href="">Patrocinadores</a>
+											</li>
+										</ul>
 									</li>
 								</ul>
 							</li>
@@ -70,13 +105,13 @@ class Sidebar extends Component {
 								</a>
 								<ul className="dropdown-menu multi-level">
 									<li>
-										<a href="#">SENSOAGUA V1</a>
+										<Link to="/sensoagua-v1">Sensoagua V1</Link>
 									</li>
 									<li>
-										<a href="#">SENSOAGUA V2</a>
+										<Link to="/sensoagua-v2">Sensoagua V2</Link>
 									</li>
 									<li>
-										<a href="#">SENSOAGUA V3</a>
+										<Link to="/sensoagua-v3">Sensoagua V3</Link>
 									</li>
 								</ul>
 							</li>

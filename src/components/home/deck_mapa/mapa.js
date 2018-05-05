@@ -41,8 +41,8 @@ class Root extends Component {
 			iconMapping: null,
 			popup: null
 		};
-
-		axios.get(`${ROOT_URL}/registros_geo`).then(res => {
+		const { region } = props;
+		axios.get(`${ROOT_URL}/registros_geo/${typeof region !== 'undefined' ? region : ''}`).then(res => {
 			res.data.features = res.data.features.map(actual => {
 				actual.properties.date = timeParse('%d/%m/%Y %H:%M:%S')(actual.properties.timestamp);
 				let nuevo = { ...actual.properties, ...actual.geometry };

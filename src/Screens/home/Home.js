@@ -21,6 +21,13 @@ class Content extends Component {
 			<div>
 				<div className="detail">
 					<div className="description">
+						<h1>Monitoreo de Agua en Colombia</h1>
+						Desarrollar una herramienta que nos permita conocer las condiciones de calidad del agua en
+						comunidades vulnerables. Con esta herramienta se busca poder monitorear las cuencas
+						hidrográficas permitiéndonos generar alertas tempranas ante posibles fuentes de contaminación
+						en las cuencas.
+					</div>
+					<div className="description">
 						<div className="map_container">
 							<Mapa />
 							{/* <Visualizacion /> */}
@@ -46,6 +53,9 @@ class Content extends Component {
 					</div>
 
 					<style jsx>{`
+						h1 {
+							margin-top: 0;
+						}
 						.detail {
 							font-size: 1.4rem;
 							display: flex;
