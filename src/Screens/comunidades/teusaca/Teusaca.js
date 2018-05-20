@@ -19,7 +19,6 @@ class Teusaca extends Component {
 					<Mapa region={2} />
 				</div>
 				<div className="description">
-					<p>Proyecto 2</p>
 					<p>La Gran Cuenca del R&iacute;o Teusac&aacute;</p>
 					<p>
 						Es un proyecto que viene siendo impulsado por el acueducto Progresar E.S.P donde por medio de
