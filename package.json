@@ -73,7 +73,7 @@
     },
     "scripts": {
         "start": "node scripts/start.js",
-        "build": "NODE_ENV=production && node scripts/build.js ",
+        "build": "NODE_ENV=production && node scripts/build.js",
         "test": "node scripts/test.js --env=jsdom",
         "build_primary": "node scripts/build.js"
     },
