@@ -4,7 +4,7 @@ import sistema from './images/sistema.png';
 import componentes from './images/componentes.png';
 import pdf from './manual.pdf';
 import Footer from '../../components/footer/Footer';
-
+import { Link, withRouter } from "react-router-dom";
 class Equipo extends Component {
 	render() {
 		const { bp_large, bp_medium, bp_small } = bp;
@@ -12,6 +12,25 @@ class Equipo extends Component {
 		return (
 			<div>
 				<div className="detail">
+				<div className="description">
+						<center>
+						
+                    <Link to="/sensoagua-v1">
+						Sonda Agua IMAGEN 1
+					</Link>
+                  <br></br>
+                 
+                    <Link to="/sensoagua-v2">
+						Sonda Agua IMAGEN  2
+					</Link>
+					<br></br>
+                  
+                    <Link to="/sensoagua-v3">
+						Sonda Agua IMAGEN 3
+					</Link>
+					<br></br>
+						</center>
+					</div>
 					<div className="description">
 						<h1>Monitoreo de agua en comunidades vulnerables de Colombia</h1>
 
