@@ -40,7 +40,9 @@ class Proyecto3 extends Component {
       arrows: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      centerMode: true
     };
     return (
       <div className="detail">
@@ -65,8 +67,8 @@ class Proyecto3 extends Component {
             </li>
           </ul>
         </div>
-        <div className="description">
-          <Slider {...settings}>
+        <div className="description" >
+          <Slider {...settings} style={{maxHeight: '50vh'}} >
             <div>
               <img src={one} className="imagen" />
             </div>
@@ -193,6 +195,7 @@ class Proyecto3 extends Component {
             flex-direction: column;
             justify-content: center;
           }
+
         `}</style>
         <style jsx global>{`
           .slick-prev:before,
