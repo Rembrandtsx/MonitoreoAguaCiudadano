@@ -5,7 +5,7 @@ import { timeParse, scaleTime } from 'd3';
 const ROOT_URL =
     process.env.NODE_ENV === 'production'
         ? 'https://monitoreociudadano.uniandes.edu.co:8000'
-        : 'http://localhost:5030';
+        : 'https://monitoreociudadano.uniandes.edu.co:8000';
 
 export const FETCH_MARKERS = 'FETCH_MARKERS';
 const FILTER_MARKERS = 'FILTER_MARKERS';

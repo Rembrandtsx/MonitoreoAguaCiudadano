@@ -42,110 +42,24 @@ class Sidebar extends Component {
             <ul className="nav navbar-nav">
               <li className={`dropdown ${pathname === "/" && "active"}`}>
                 <Link to="/">
-                  INICIO <b className="caret" />
+                  INICIO 
                 </Link>
-                <ul className="dropdown-menu multi-level">
-                  <li className="">
-                    <Link to="/equipo-de-trabajo">Equipo</Link>
-                  </li>
-                </ul>
               </li>
               <li
                 className={`dropdown ${pathname.startsWith("/comunidades") &&
                   "active"}`}
               >
-                <Link
-                  to="/comunidades"
-                  className="dropdown-toggle"
-                  data-toggle="dropdown"
-                >
-                  COMUNIDADES <b className="caret" />
+                <Link to="/comunidades" >
+                  COMUNIDADES 
                 </Link>
-                <ul className="dropdown-menu multi-level">
-                  <li className="dropdown-submenu">
-                    <Link to="/comunidades-teusaca">TEUSACA</Link>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <Link to="/comunidades-teusaca-actividades">
-                          ACTIVIDADES
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/comunidades-teusaca-mapa">MAPA</Link>
-                      </li>
-                      <li>
-                        <Link to="/comunidades-teusaca-patrocinadores">
-                          PATROCINADORES
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="dropdown-submenu">
-                    <Link to="/comunidades-santurban">SANTURBAN</Link>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <Link to="/comunidades-santurban-actividades">
-                          ACTIVIDADES
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/comunidades-santurban-mapa">MAPA</Link>
-                      </li>
-                      <li>
-                        <Link to="/comunidades-santurban-colaboradores">
-                          COLABORADORES
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/comunidades-santurban-patrocinadores">
-                          PATROCINADORES
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="dropdown-submenu">
-                    <Link to="/comunidades-amazonas">AMAZONAS</Link>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <Link to="/comunidades-amazonas-actividades">
-                          ACTIVIDADES
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/comunidades-amazonas-mapa">MAPA</Link>
-                      </li>
-                      <li>
-                        <Link to="/comunidades-amazonas-colaboradores">
-                          COLABORADORES
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/comunidades-amazonas-patrocinadores">
-                          PATROCINADORES
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+               
               </li>
               <li
-                className={`dropdown ${pathname.startsWith("sonda") ||
-                  (pathname.startsWith("senso") && "active")}`}
+                className={`dropdown ${pathname === "/sonda" && "active"}`}
               >
                 <Link to="/sonda-de-agua">
-                  SONDA DE AGUA <b className="caret" />
+                  SONDA DE AGUA
                 </Link>
-                <ul className="dropdown-menu multi-level">
-                  <li>
-                    <Link to="/sensoagua-v1">Sensoagua V1</Link>
-                  </li>
-                  <li>
-                    <Link to="/sensoagua-v2">Sensoagua V2</Link>
-                  </li>
-                  <li>
-                    <Link to="/sensoagua-v3">Sensoagua V3</Link>
-                  </li>
-                </ul>
               </li>
               <li className={`dropdown ${pathname === "/subir" && "active"}`}>
                 <Link to="/subir">CARGAR DATOS</Link>

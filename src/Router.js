@@ -53,6 +53,7 @@ const Router = ({ children }) => (
           <Route path="/el-proyecto" component={Proyecto} />
           <Route path="/equipo-de-trabajo" component={EquipoTrabajo} />
           <Route path="/sonda-de-agua" component={Equipo} />
+          <Route path="/comunidades" component={Comunidades} />
           <Route exact path="/comunidades-teusaca" component={Teusaca} />
           <Route
             exact
@@ -115,7 +116,6 @@ const Router = ({ children }) => (
           <Route path="/sensoagua-v1" component={SensoaguaV1} />
           <Route path="/sensoagua-v2" component={SensoaguaV2} />
           <Route path="/sensoagua-v3" component={SensoaguaV3} />
-          <Route path="/comunidades" component={Comunidades} />
           <Route path="/app" component={App} />
           <Route path="/contacto" component={Contacto} />
           <Route path="/multimedia" component={Multimedia} />
