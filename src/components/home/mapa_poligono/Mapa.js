@@ -18,7 +18,7 @@ import './custom-mapbox-css.css';
 export const ROOT_URL =
     process.env.NODE_ENV === 'production'
         ? 'https://monitoreociudadano.uniandes.edu.co:8000'
-        : 'http://localhost:8000';
+        : 'https://monitoreociudadano.uniandes.edu.co:8000';
 
 mapboxgl.accessToken =
     'pk.eyJ1IjoiZmFiaW9lc3Bpbm9zYSIsImEiOiJjaWVtMGJ4a28wMDdnNHFrbjY1OWtxbXN6In0.nSjm5Xx8l3Hg4JqTjkdm0w';
