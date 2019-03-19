@@ -95,16 +95,70 @@ class Subir extends Component {
                     <div className="description">
                         <div className="instrucciones">
                             <p>
-                                Aqui podrás subir datos manualmente desde un
-                                archivo Excel en formato CSV. Los datos deben
-                                tener el formato que aparece en este ejemplo:
+                                En este enlace se encuentra la descripción para cargar mediciones. Las mediciones adquiridas con la app móvil deben registrarse por cada usuario en un archivo de Excel. Este archivo debe cargarse manualmente en formato CSV a la página Web. 
+                                El formato que deben tener se presenta a continuación: 
                             </p>
                             <img src={captura} className="captura" />
                             <p>
-                                Puede descargar{' '}
-                                <a href={plantilla}>esta plantilla</a> como
-                                ejemplo
+                            
+
+ 
+
+Se puede descargar una plantilla en Excel para que la use de modelo <a href={plantilla}>aquí</a> <br></br>
+
+ 
+
+Los parámetros de esta plantilla son:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
                             </p>
+                            <ul className="indent">
+                            <li>
+                            Fecha_y_hora: La fecha y hora en la cual fue tomado el dato, en el formato exacto "DD/MM/AAAA HH:mm:ss" 
+                            </li>
+                            <li>
+                             Longitud: La longitud de la ubicación en donde fue tomado el dato    
+                            </li>
+                            <li>
+                              Latitud: La latitud de la ubicación en donde fue tomado el dato   
+                            </li>
+                            <li>
+                             Imei: El código único que referencia al celular que tomo el dato    
+                            </li>
+                            <li>Hg: Mercurio (Resolución No. 2115 de 2007.) </li>
+                            <li>Temperatura: Temp (°C) </li>
+                            <li>Conductividad: Conductividad (uS/cm) </li>
+                            <li>Od: Oxígeno disuelto (mg/L) </li>
+                            <li>pH: pH (adimensional) </li>
+                            <li>
+                                Comunidad: La comunidad a la cual pertenecen los datos: 
+                                <ul className="indent">
+                                    <li>1: Santurban</li>
+                                    <li>2: Teusaca</li>
+                                    <li>3: Amazonas</li>
+                                </ul>
+                            </li>
+                        </ul>
                         </div>
                         <div className="dropzone">
                             <Dropzone
@@ -169,40 +223,7 @@ class Subir extends Component {
                                 );
                             })}
                         </div>
-                        <p>Los parametros tienen la siguiente explicación:</p>
-                        <ul className="indent">
-                            <li>
-                                fecha_y_hora: La fecha y hora en la cual fue
-                                tomado el dato, en el formato exacto "DD/MM/AAAA
-                                HH:mm:ss"
-                            </li>
-                            <li>
-                                longitud: La longitud de la ubicación en donde
-                                fue tomado el dato
-                            </li>
-                            <li>
-                                latitud: La latitud de la ubicación en donde fue
-                                tomado el dato
-                            </li>
-                            <li>
-                                imei: El código único que referencia al celular
-                                que tomo el dato
-                            </li>
-                            <li>hg: Mercurio (adimensional)</li>
-                            <li>temperatura: Temp (°C)</li>
-                            <li>conductividad: Conductividad (uS/cm)</li>
-                            <li>od: Oxígeno disuelto (mg/L)</li>
-                            <li>pH: pH (adimensional)</li>
-                            <li>
-                                region: La región a la cual pertenecen los
-                                datos:
-                                <ul className="indent">
-                                    <li>1: Santurban</li>
-                                    <li>2: Teusaca</li>
-                                    <li>3: Amazonas</li>
-                                </ul>
-                            </li>
-                        </ul>
+                
                     </div>
 
                     <style jsx>{`

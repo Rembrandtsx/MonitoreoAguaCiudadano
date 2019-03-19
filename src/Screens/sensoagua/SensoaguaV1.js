@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { bp, colors } from '../../theme';
+import Sensoaguav1 from './Sonda de Agua/SensoraguaV1.png'
 
 class SensoaguaV1 extends Component {
 	render() {
@@ -10,20 +11,19 @@ class SensoaguaV1 extends Component {
 				<div className="description">
 					<h3>Sensoagua V1</h3>
 					<p>
-						Es un dispositivo que est&aacute; en capacidad de realizar mediciones de temperatura y
-						conductividad. Las mediciones que este registra son transmitidas por un m&oacute;dulo celular
-						hacia el sub-sistema de informaci&oacute;n.
+					Sensoagua versión 1 (Sensoagua V1) fue desarrollado en el 2015 con el propósito de medir temperatura y conductividad. Esta sonda de dos parámetros cuenta con módulos de electrónica de adquisición, comunicación y alimentación. La interface a usuario es a través de un applicativo web (https://economia.uniandes.edu.co/centros-de-investigacion/cede/web-de-proyectos-cede/santurban-visible)y los datos son visibilizados en  WEB page monitoreo ciudadano 
+
+
 					</p>
 					<p>&nbsp;</p>
 					<p>
-						El equipo puede ser utilizado en dos modos de operaci&oacute;n. Uno el cual puede ser ubicado
-						en un punto determinado donde se quiere realizar la medici&oacute;n dej&aacute;ndolo por un
-						tiempo indeterminado, en este modo de operaci&oacute;n se puede configurar el equipo para que
-						tome las mediciones cada tiempo establecido por el usuario. En segundo modo de
-						operaci&oacute;n el usuario puede realizar mediciones diferentes puntos. En este caso las
-						mediciones se realizan de forma continua.
+					Esta versión permite dos formas de programación de medida: en un punto fijo tomando mediciones manuales o programando el intervalo de medida en el aplicativo para adquirir varias medidas en un intervalo especifico de tiempo por ejemplo 30 medidas en una hora.  El primero permite que sensoagua V1 pueda ser ubicado en un punto determinado donde manualmente el usuario tome una o varias medidas. En el segundo, el usuario puede especificar el intervalo de medida y dejar sensoaguav1 en el punto de interés. En este caso las mediciones que programa el usuario las cuales se realizan de forma continua. 
 					</p>
+					<center>
+						<img src={Sensoaguav1} />
+					</center>
 				</div>
+				
 				<style jsx>{`
 					h3 {
 						margin-top: 0;

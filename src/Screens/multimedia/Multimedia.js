@@ -11,14 +11,14 @@ class Multimedia extends Component {
     return (
       <div className="detail">
         <div className="description">
-          <h2>MULTIMEDIA</h2>
+          <h2>NOTICIAS</h2>
         </div>
         <div className="description">
           <h4>Investigadores de Los Andes luchan para salvar el río Teusacá</h4>
           <div className="description video_container">
             <iframe
               className="video"
-              height="100%"
+              
               src="https://www.youtube.com/embed/BqPtlJSoGrQ"
             />
           </div>
@@ -30,7 +30,7 @@ class Multimedia extends Component {
           <div className="description video_container">
             <iframe
               className="video"
-              height="100%"
+              
               src="https://www.youtube.com/embed/IonNAynjKoI"
             />
           </div>
@@ -122,8 +122,8 @@ class Multimedia extends Component {
           }
 
           .video {
-            height: 600px;
-            width: 80%;
+            
+            width: 100%;
 
             @media ${bp_medium} {
               width: 100%;

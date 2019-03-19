@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { bp, colors } from "../../theme";
 import app_store from "./images/app_store.svg";
 import play_store from "./images/google_play.png";
-import pantallazo from "./images/pantallazo.png";
+import pantallazo1 from "./images/pantallazo.png";
+import pantallazo2 from "./images/pantallazo.png";
 import Footer from "../../components/footer/Footer";
 
 class App extends Component {
@@ -13,21 +14,24 @@ class App extends Component {
       <div>
         <div className="detail">
           <div className="description">
-            <h2>CALPROBE APP</h2>
-            Por medio de esta aplicación el usuario va poder tomar las
-            mediciones y registrarlas en la plataforma, así como visualizar las
-            variables medidas.
+            <h2>Aplicaciones</h2>
+            <p>En esta sección se describen las versiones de las interfaces para las sondas de agua- aplicativos móviles: Calprobe y Calprobe2 es una herramienta para los usuarios de SensoAgua V2 y V3. Donde pode medio de la aplicación el usuario va a estar en capacidad de medir cuatro variables de calidad del agua las cuales podrán ser enviadas por mensaje de texto o correo electrónico junto con la localización donde realzó la medición. </p>
             <br />
             <br />
+            <h3>Calprobe2 </h3>
             <center>
-              <img className="" src={pantallazo} />
+              <img className="" src={pantallazo1} />
             </center>
+            <p>Registro Dirección Nacional de Derecho de Autor, el cual quedó bajo Libro- Tomo- Partida 13-66-58 de fecha 21-feb-2018. </p>
+            <h3>Calprobe </h3>
+            <center>
+              <img className="" src={pantallazo2} />
+            </center>
+            <p>Registro Dirección Nacional de Derecho de Autor, el cual quedó bajo Libro- Tomo- Partida 13-70-281 de fecha 05-dic-2018.  </p>
           </div>
           <div className="description">
             <p>
-              Certificado de Registro del software de la referencia ante la
-              Dirección Nacional de Derecho de Autor, el cual quedó bajo Libro-
-              Tomo- Partida 13-66-58 de fecha 21-feb-2018.
+              
             </p>
             <div className="logo">
               <img className="logos" src={play_store} />

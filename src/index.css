@@ -21,3 +21,6 @@ body {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 }
+img{
+	max-width: 100%;
+}

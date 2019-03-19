@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { bp, colors } from '../../theme';
 import sensoaguav2 from './sensoaguav2.png';
-
+import pdf from './Sonda de Agua/Manual SensoAguaV2F.pdf';
 class SensoaguaV2 extends Component {
 	render() {
 		const { bp_large, bp_medium, bp_small } = bp;
@@ -11,41 +11,20 @@ class SensoaguaV2 extends Component {
 				<div className="description">
 					<h3>Sensoagua V2</h3>
 					<p>
-						Es un dispositivo que est&aacute; en capacidad de realizar mediciones de cuatro variables que
-						nos sirven para conocer la calidad del agua. El funcionamiento del dispositivo se divide en
-						dos partes. Tiene una parte hardware y otro software.
+					Sensoagua versión 2 (Sensoagua V2)   fue desarrollado en el 2016 con el propositivo de medir temperatura, conductividad, oxígeno disuelto y pH. Esta sonda de medición de 4 parámetros físico químicos cuenta con una interface de usuario de app móvil desarrollada en Android que se comunica al celular vía Bluetooth.  Calprobe permite realizar mediciones individuales o de los 4 parámetros con georreferenciación y tres formas de transmisión de datos: envió por mensaje de texto o correo electrónico y la electrónica de adquisición que cuenta con una batería de para 8 horas de uso. Además de permitir calibración de los sensores.  Dentro de las características que se encuentran en la aplicación se puede obtener la localización geográfica y visualizarla en un mapa.  Los datos enviados se cargan a una aplicación web pública: <a href="https://monitoreociudadano.uniandes.edu.co/">https://monitoreociudadano.uniandes.edu.co/</a>  
 					</p>
 					<p>
-						En la parte hardware encontramos la instrumentaci&oacute;n necesaria para poder realizar
-						mediciones de temperatura, conductividad, pH y Ox&iacute;geno disuelto. Dentro de los
-						sensores que se est&aacute;n utilizando encontramos tres sensores comerciales y uno
-						dise&ntilde;ado y desarrollado en la Universidad de los Andes. El sensor que se
-						desarroll&oacute; y dise&ntilde;o en la universidad es el sensor de conductividad donde
-						partiendo del modelo de placas paralelas de un capacitor que dependiendo de
-						diel&eacute;ctrico que se encuentre entre las placas la respuesta del sensor va ser
-						diferente. Para la comunicaci&oacute;n con la interfaz de usuario se tiene un m&oacute;dulo
-						bluetooth.
+					Para poder comunicarse con la parte hardware de la sonda se utiliza comunicación bluetooth con la cual se envían diferentes comandos que nos permiten obtener las mediciones de cada uno de los parámetros a medir, esta aplicación también está en capacidad de realizar la calibración de los sensores. Con la aplicación se pueden enviar los datos medidos por SMS, por correo electrónico, o por web servicie esto en busca de poder registrar la medición en la plataforma de visualización. En la plataforma se registran las mediciones realizadas con la posición donde se realizó la medición.  
 					</p>
-					<p>
-						En la parte Software se desarroll&oacute; la interfaz del usuario, para esto se
-						utiliz&oacute; Android Studio el cual es un entorno de desarrollo integrado para la
-						plataforma Android. En esta plataforma se desarroll&oacute; un App con la cual se realiza la
-						adquisici&oacute;n de los datos. Dentro de las caracter&iacute;sticas que se encuentran en la
-						aplicaci&oacute;n se puede obtener la localizaci&oacute;n geogr&aacute;fica y visualizarla en
-						un mapa. Para poder comunicarse con la parte hardware de la sonda se utiliza
-						comunicaci&oacute;n bluetooth con la cual se env&iacute;an diferentes comandos que nos
-						permiten obtener las mediciones de cada uno de los par&aacute;metros a medir, esta
-						aplicaci&oacute;n tambi&eacute;n est&aacute; en capacidad de realizar la calibraci&oacute;n
-						de los sensores. Con la aplicaci&oacute;n se pueden enviar los datos medidos por SMS, por
-						correo electr&oacute;nico, o por web servicie esto en busca de poder registrar la
-						medici&oacute;n en la plataforma de visualizaci&oacute;n. En la plataforma se registran las
-						mediciones realizadas con la posici&oacute;n donde se realiz&oacute; la
-						medici&oacute;n.&nbsp;
-					</p>
-					<p>En el siguiente diagrama se muestra una descripci&oacute;n grafica del dispositivo:</p>
+					<p>EEn el siguiente diagrama se muestra una descripción grafica del <b>Sensoagua V2</b>: </p>
 					<center>
 						<img src={sensoaguav2} />
 					</center>
+					<center>
+							<a href={pdf} target="_blank" rel="noopener noreferrer">
+								<button className="btn btn-primary">Ver manual</button>
+							</a>
+						</center>
 				</div>
 				<style jsx>{`
 					h3 {

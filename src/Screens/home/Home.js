@@ -6,8 +6,7 @@ import { bp, colors } from '../../theme';
 // import Mapa from '../../components/home/mapa/mapa';
 // import Visualizacion from '../../components/home/visualizacion/Visualizacion';
 import Mapa from '../../components/home/deck_mapa/mapa';
-
-import Footer from '../../components/footer/Footer';
+import EquipoTrabajo from '../equipo_trabajo/EquipoTrabajo';
 
 class Content extends Component {
     render() {
@@ -40,77 +39,7 @@ class Content extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="description">
-                        <center>
-                           <h3>
-                            Equipo de trabajo 
-                           </h3>
-                           <h5>
-                            Uniandes
-                           </h5>
-                           Juan Camilo Cárdenas- facultad de Economía 
-<br></br>
- 
-
-Felipe Muñoz- Departamento de Ingeniería Química 
-
- <br></br>
-
-Johana Husserl- Departamento Civil y Ambiental 
-
- <br></br>
-
-Alba Ávila-  Departamento de Ingeniería Eléctrica y Electrónica 
-
- 
-<br></br>
-Jaime Andrés Peréz- Departamento de Ingeniería Eléctrica y Electrónica 
-
- <br></br>
-
-Sebastián Arévalo- Departamento de Ingeniería Eléctrica y Electrónica <br></br>
-<br></br>
-
-<h5>
-                            Internacionales
-                           </h5>
-                           2017-2019 
-
- 
-
-Bath University, UK 
-<br></br>
-Funding Newton Institutional Links-2017 
-<br></br>
-Mirella Di Lorenzo,  Department of Chemical Engineering 
-<br></br>
- 
-
-Elena Bernalte, Department of Chemical Engineering 
-<br></br>
- 
-
-Pedro Estrela,  Department of Electronic & Electrical Engineering 
-
- <br></br>
-
-Jannis Wenk,  Department of Chemical Engineering 
-
- 
-
- <br></br>
-
-2013-2105 
-<br></br>
-Donald Blair- PublicLab y MIT Media Lab 
-
- <br></br>
-
- 
-
- 
-                        </center>
-                    </div>
+                    
                     <style jsx>{`
                         h1 {
                             margin-top: 0;
@@ -209,7 +138,7 @@ Donald Blair- PublicLab y MIT Media Lab
                         }
                     `}</style>
                 </div>
-                <Footer />
+                <EquipoTrabajo/>
             </div>
         );
     }

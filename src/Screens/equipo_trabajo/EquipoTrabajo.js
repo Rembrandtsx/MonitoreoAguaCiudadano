@@ -10,24 +10,75 @@ class EquipoTrabajo extends Component {
 			<div>
 				<div className="detail">
 					<div className="description">
-						<h1>Equipo de trabajo</h1>
-						<p>UNIANDES</p>
-						<ul>
-							<li>Juan Camilo C&aacute;rdenas</li>
-							<li>Felipe Mu&ntilde;oz</li>
-							<li>Johana Husserl</li>
-							<li>Alba &Aacute;vila</li>
-							<li>Jaime Andr&eacute;s Per&eacute;z</li>
-							<li>Sebasti&aacute;n Ar&eacute;valo</li>
-						</ul>
-						<p>INTERNACIONALES</p>
-						<ul>
-							<li>Don Blair</li>
-							<li>Mirella Di Lorenzo</li>
-							<li>Elena Bernalte</li>
-							<li>Pedro Estrela</li>
-							<li>Jannis Wenk</li>
-						</ul>
+						<center>
+							<h3>
+								Equipo de trabajo
+                           </h3>
+							<h5>
+								Uniandes
+                           </h5>
+							Juan Camilo Cárdenas- facultad de Economía
+<br></br>
+
+
+							Felipe Muñoz- Departamento de Ingeniería Química
+							
+ <br></br>
+
+							Johana Husserl- Departamento Civil y Ambiental
+							
+ <br></br>
+
+							Alba Ávila-  Departamento de Ingeniería Eléctrica y Electrónica
+							
+							
+<br></br>
+							Jaime Andrés Peréz- Departamento de Ingeniería Eléctrica y Electrónica
+							
+ <br></br>
+
+							Sebastián Arévalo- Departamento de Ingeniería Eléctrica y Electrónica <br></br>
+							<br></br>
+
+							<h5>
+								Internacionales
+                           </h5>
+							2017-2019
+ 
+ 
+ 
+ Bath University, UK
+<br></br>
+							Funding Newton Institutional Links-2017
+<br></br>
+							Mirella Di Lorenzo,  Department of Chemical Engineering
+<br></br>
+
+
+							Elena Bernalte, Department of Chemical Engineering
+<br></br>
+
+
+							Pedro Estrela,  Department of Electronic & Electrical Engineering
+							
+ <br></br>
+
+							Jannis Wenk,  Department of Chemical Engineering
+							
+							
+							
+ <br></br>
+
+							2013-2105
+<br></br>
+							Donald Blair- PublicLab y MIT Media Lab
+							
+ <br></br>
+
+
+
+
+						</center>
 					</div>
 				</div>
 				<style jsx>{`

@@ -16,14 +16,15 @@ class Content extends Component {
 		} = colors;
 		const { bp_medium, bp_large, bp_largest } = bp;
 		return (
-			<div className="container">
-				<Header title="Electroagua" />
-				<div className="content">
-					<Router>
-						<Sidebar />
-					</Router>
-				</div>
-				<style jsx>{`
+			<div>
+				<div className="container">
+					<Header title="Electroagua" />
+					<div className="content">
+						<Router>
+							<Sidebar />
+						</Router>
+					</div>
+					<style jsx>{`
 					.container {
 						max-width: 125rem;
 						margin: 8rem auto;
@@ -47,7 +48,7 @@ class Content extends Component {
 						}
 					}
 				`}</style>
-				<style jsx global>{`
+					<style jsx global>{`
 					* {
 						margin: 0;
 						padding: 0;
@@ -83,6 +84,8 @@ class Content extends Component {
 						min-height: 100vh;
 					}
 				`}</style>
+				</div>
+				<Footer />
 			</div>
 		);
 	}
