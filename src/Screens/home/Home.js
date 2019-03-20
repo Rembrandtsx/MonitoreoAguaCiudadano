@@ -138,7 +138,7 @@ class Content extends Component {
                         }
                     `}</style>
                 </div>
-                <EquipoTrabajo/>
+               
             </div>
         );
     }

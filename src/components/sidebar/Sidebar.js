@@ -45,6 +45,11 @@ class Sidebar extends Component {
                   INICIO 
                 </Link>
               </li>
+              <li className={`dropdown ${pathname === "/" }`}>
+                <Link to="/equipo-de-trabajo">
+                  EQUIPO 
+                </Link>
+              </li>
               <li
                 className={`dropdown ${pathname.startsWith("/comunidades") &&
                   "active"}`}
