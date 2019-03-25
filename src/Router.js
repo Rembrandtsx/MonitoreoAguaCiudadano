@@ -17,6 +17,7 @@ import Comunidades from "./Screens/comunidades/Comunidades";
 import Teusaca from "./Screens/comunidades/teusaca/Teusaca";
 import Santurban from "./Screens/comunidades/santurban/Santurban";
 import Amazonas from "./Screens/comunidades/amazonas/Amazonas";
+import Baru from "./Screens/comunidades/baru/Baru";
 
 import ActividadesAmazonas from "./Screens/comunidades/amazonas/sub_categories/actividades";
 import ActividadesSanturban from "./Screens/comunidades/santurban/sub_categories/actividades";
@@ -55,6 +56,7 @@ const Router = ({ children }) => (
           <Route path="/sonda-de-agua" component={Equipo} />
           <Route path="/comunidades" component={Comunidades} />
           <Route exact path="/comunidades-teusaca" component={Teusaca} />
+          <Route exact path="/comunidades-baru" component={Baru} />
           <Route
             exact
             path="/comunidades-teusaca-actividades"
@@ -118,7 +120,7 @@ const Router = ({ children }) => (
           <Route path="/sensoagua-v3" component={SensoaguaV3} />
           <Route path="/app" component={App} />
           <Route path="/contacto" component={Contacto} />
-          <Route path="/multimedia" component={Multimedia} />
+          <Route path="/noticias" component={Multimedia} />
           <Route path="/perimetro" component={Perimetro} />
         </Switch>
       </main>

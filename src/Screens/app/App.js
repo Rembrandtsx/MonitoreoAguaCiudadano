@@ -3,7 +3,7 @@ import { bp, colors } from "../../theme";
 import app_store from "./images/app_store.svg";
 import play_store from "./images/google_play.png";
 import pantallazo1 from "./images/pantallazo.png";
-import pantallazo2 from "./images/pantallazo.png";
+import pantallazo2 from "./images/Calprobe.png";
 import Footer from "../../components/footer/Footer";
 
 class App extends Component {
@@ -18,21 +18,18 @@ class App extends Component {
             <p>En esta sección se describen las versiones de las interfaces para las sondas de agua- aplicativos móviles: Calprobe y Calprobe2 es una herramienta para los usuarios de SensoAgua V2 y V3. Donde pode medio de la aplicación el usuario va a estar en capacidad de medir cuatro variables de calidad del agua las cuales podrán ser enviadas por mensaje de texto o correo electrónico junto con la localización donde realzó la medición. </p>
             <br />
             <br />
-            <h3>Calprobe2 </h3>
+            <center><h3>Calprobe2 </h3> </center> 
             <center>
-              <img className="" src={pantallazo1} />
+              <img className="" src={pantallazo1} /> <br></br> <br></br>
             </center>
             <p>Registro Dirección Nacional de Derecho de Autor, el cual quedó bajo Libro- Tomo- Partida 13-66-58 de fecha 21-feb-2018. </p>
-            <h3>Calprobe </h3>
+            <center><h3>Calprobe </h3> </center> 
             <center>
-              <img className="" src={pantallazo2} />
+              <img className="" src={pantallazo2} /> <br></br> <br></br>
             </center>
             <p>Registro Dirección Nacional de Derecho de Autor, el cual quedó bajo Libro- Tomo- Partida 13-70-281 de fecha 05-dic-2018.  </p>
-          </div>
-          <div className="description">
-            <p>
-              
-            </p>
+       
+         
             <div className="logo">
               <img className="logos" src={play_store} />
             </div>
@@ -95,7 +92,7 @@ class App extends Component {
             }
           `}</style>
         </div>
-        <Footer />
+
       </div>
     );
   }

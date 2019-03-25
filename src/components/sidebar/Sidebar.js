@@ -75,7 +75,7 @@ class Sidebar extends Component {
               <li
                 className={`dropdown ${pathname === "/multimedia" && "active"}`}
               >
-                <Link to="/multimedia">NOTICIAS</Link>
+                <Link to="/noticias">NOTICIAS</Link>
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
