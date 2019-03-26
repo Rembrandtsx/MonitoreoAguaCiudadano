@@ -11,42 +11,60 @@ class Multimedia extends Component {
     return (
       <div className="detail">
         <div className="description">
-          <h2>NOTICIAS</h2>
-        </div>
-        <div className="description">
+          <h1>NOTICIAS</h1>
+          <p>A continuación, se lista el registro que en medios periodísticos y en redes sociales ha tenido el proyecto y el trabajo con comunidades.</p>
+
+          <h3>VIDEOS</h3>
           <h4>Investigadores de Los Andes luchan para salvar el río Teusacá</h4>
-          <div className="description video_container">
+          <div className=" video_container">
             <iframe
               className="video"
               
               src="https://www.youtube.com/embed/BqPtlJSoGrQ"
             />
           </div>
-        </div>
-        <div className="description">
+       
           <h4>
             La ingeniería de las Cosas: sensores para medir la calidad del agua
           </h4>
-          <div className="description video_container">
+          <div className=" video_container">
             <iframe
               className="video"
               
               src="https://www.youtube.com/embed/IonNAynjKoI"
             />
           </div>
-        </div>
-        <div className="description">
+
+          <h4>
+          Agua dulce agua - Nuevo dispositivo para monitorear la calidad del agua 
+          </h4>
+          <div className=" video_container">
+          <iframe className="video" src="https://www.youtube.com/embed/rQotceQnWtQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+       
           <h3>NOTAS DE PRENSA</h3>
-          <a href="https://www.elespectador.com/noticias/medio-ambiente/comunidad-mide-calidad-del-agua-santurban-articulo-643140">
-            {" "}
-            https://www.elespectador.com/noticias/medio-ambiente/comunidad-mide-calidad-del-agua-santurban-articulo-643140
-          </a>
-          <a href="http://www.eltiempo.com/archivo/documento/CMS-16653997">
-            {" "}
-            http://www.eltiempo.com/archivo/documento/CMS-16653997
-          </a>
+          <p>
+          La comunidad que mide la calidad del agua en Santurbán, disponible en línea en:
+          </p>
+          <a href="https://www.elespectador.com/noticias/medio-ambiente/comunidad-mide-calidad-del-agua-santurban-articulo-643140">https://www.elespectador.com/noticias/medio-ambiente/comunidad-mide-calidad-del-agua-santurban-articulo-643140  </a> 
+          
+          <p>
+          Instalan sensores para medir calidad de agua del río Teusacá, disponible en línea: 
+          </p>
+          <a href="http://www.eltiempo.com/archivo/documento/CMS-16653997">http://www.eltiempo.com/archivo/documento/CMS-16653997  </a> 
+          
+          <p>
+          New device will help protect vulnerable communities in Colombia from unsafe water Disponible en línea: 
+          </p>
+          <a href="http://www.bath.ac.uk/announcements/new-device-will-help-protect-vulnerable-communities-in-colombia-from-unsafe-water/​">http://www.bath.ac.uk/announcements/new-device-will-help-protect-vulnerable-communities-in-colombia-from-unsafe-water/​  </a> 
+          
+          <p>
+          NUEVO DISPOSITIVO PARA MONITOREAR LA CALIDAD DEL AGUA 
+          </p>
+          <a href="https://uniandes.edu.co/es/noticias/ingenieria/nuevo-dispositivo-para-el-monitoreo-del-agua">https://uniandes.edu.co/es/noticias/ingenieria/nuevo-dispositivo-para-el-monitoreo-del-agua </a> 
+          
         </div>
-        <Footer />
+        
         <style jsx>{`
           .detail {
             font-size: 1.4rem;
@@ -68,7 +86,9 @@ class Multimedia extends Component {
               flex-direction: column;
             }
           }
-
+          .detail *{
+            padding-top: 1em;
+          }
           .title {
             font-weight: bold;
             font-style: italic;
@@ -124,9 +144,10 @@ class Multimedia extends Component {
           .video {
             
             width: 100%;
-
+            min-height: 70vh;
             @media ${bp_medium} {
               width: 100%;
+              min-height: 30vh;
             }
           }
         `}</style>

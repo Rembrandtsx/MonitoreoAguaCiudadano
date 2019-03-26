@@ -12,26 +12,25 @@ class Equipo extends Component {
 		return (
 			<div>
 				<div className="detail">
-				<div className="description">
-						<center>
-						
-                    <Link to="/sensoagua-v1">
-						Sonda Agua IMAGEN 1
-					</Link>
-                  <br></br>
-                 
-                    <Link to="/sensoagua-v2">
-						Sonda Agua IMAGEN  2
-					</Link>
-					<br></br>
-                  
-                    <Link to="/sensoagua-v3">
-						Sonda Agua IMAGEN 3
-					</Link>
-					<br></br>
-						</center>
-					</div>
 					<div className="description">
+						<center>
+
+							<Link to="/sensoagua-v1">
+								Sonda Agua 1
+					</Link>
+							<br></br>
+
+							<Link to="/sensoagua-v2">
+								Sonda Agua 2
+					</Link>
+							<br></br>
+
+							<Link to="/sensoagua-v3">
+								Sonda Agua 3
+					</Link>
+							<br></br>
+						</center>
+
 						<h1>Monitoreo de agua en comunidades vulnerables de Colombia</h1>
 
 						<p>
@@ -113,66 +112,6 @@ class Equipo extends Component {
 							mediciones realizadas con la posici&oacute;n donde se realiz&oacute; la medici&oacute;n.
 							&nbsp;
 						</p>
-						<p>En el siguiente diagrama se muestra una descripci&oacute;n grafica del dispositivo:</p>
-						<img src={componentes} className="componentes" />
-						<p>Componentes de la Sonda</p>
-						<p>Sensor de pH</p>
-						<ul>
-							<li>Rango de medici&oacute;n 1 a 14.000.</li>
-							<li>Temperatura de operaci&oacute;n 1&deg;C a 99&deg;C.</li>
-							<li>Resoluci&oacute;n &plusmn;1</li>
-							<li>Precisi&oacute;n en (&plusmn;0,02).</li>
-							<li>Tiempo de respuesta 95% en 1 segundo.</li>
-							<li>Voltaje de operaci&oacute;n 3.3V a 5V</li>
-							<li>Dimensiones 12mm X 150mm.</li>
-							<li>Conector BNC.</li>
-							<li>
-								Distribuido por: <a href="http://www.atlas-scientific.com/">Atlas Scientific</a>
-							</li>
-						</ul>
-						<p>Sensor de Ox&iacute;geno Disuelto</p>
-						<ul>
-							<li>Rengo de 0 a 100mg/L</li>
-							<li>Temperatura m&aacute;xima de operaci&oacute;n 50&deg;C</li>
-							<li>Resoluci&oacute;n &plusmn;1</li>
-							<li>Presi&oacute;n m&aacute;xima de operaci&oacute;n 690kPA (100PSI)</li>
-							<li>Voltaje de operaci&oacute;n 3.3V a 5V.</li>
-							<li>Dimensiones 16.5mm X 116mm.</li>
-							<li>Conector BNC.</li>
-							<li>
-								Distribuido por: <a href="http://www.atlas-scientific.com/">Atlas Scientific</a>
-							</li>
-						</ul>
-						<p>Sensor de temperatura</p>
-						<ul>
-							<li>Rengo de operaci&oacute;n -55&deg;C a 125&deg;C.</li>
-							<li>Volteje de operaci&oacute;n 3V a 5.5V.</li>
-							<li>Resoluci&oacute;n &plusmn;0.5</li>
-							<li>Tubo en acero inoxidable de 6mm de di&aacute;metro por 35mm de largo.</li>
-							<li>Di&aacute;metro del cable 4mm.</li>
-							<li>Longitud del cable 90cm.</li>
-							<li>
-								Distribuido por:{' '}
-								<a href="http://www.didacticaselectronicas.com/">I+D Electr&oacute;nica</a>
-							</li>
-						</ul>
-						<p>&nbsp;</p>
-						<p>Sensor de Conductividad</p>
-						<ul>
-							<li>Rango de medici&oacute;n de 10&micro;S/cm a 73mS/cm</li>
-							<li>Resoluci&oacute;n &plusmn;0.5</li>
-							<li>Temperatura de operaci&oacute;n 0-70&deg;C</li>
-							<li>Dimensiones 100mm X 150mm</li>
-							<li>Conector Jack.</li>
-						</ul>
-					</div>
-
-					<div className="description">
-						<center>
-							<a href={pdf}>
-								<button className="btn btn-primary">Ver manual</button>
-							</a>
-						</center>
 					</div>
 					<style jsx>{`
 						.detail {
@@ -240,7 +179,7 @@ class Equipo extends Component {
 						}
 					`}</style>
 				</div>
-				<Footer />
+
 			</div>
 		);
 	}

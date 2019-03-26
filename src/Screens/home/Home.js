@@ -24,8 +24,7 @@ class Content extends Component {
                         monitorear las cuencas hidrográficas permitiéndonos
                         generar alertas tempranas ante posibles fuentes de
                         contaminación en las cuencas.
-                    </div>
-                    <div className="description">
+                    <br></br><br></br><br></br>
                         <div className="map_container">
                             <Mapa />
                             <div className="perimetro">

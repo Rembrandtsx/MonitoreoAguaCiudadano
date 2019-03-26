@@ -21,6 +21,8 @@ import eleven from "./images/11.jpg";
 import twelve from "./images/12.jpg";
 import thirteen from "./images/13.jpg";
 import fourteen from "./images/14.jpg";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 class Proyecto3 extends Component {
   render() {
@@ -48,36 +50,31 @@ class Proyecto3 extends Component {
       <div className="detail">
         <div className="description">
           <Mapa region={3} />
-        </div>
-        <div className="description">
-          <p>Monitoreo de agua en comunidades vulnerables de Colombia</p>
+        
+          <h3>Monitoreo de agua en comunidades vulnerables de Colombia</h3>
           <p>
-            Desarrollar una herramienta que nos permita conocer las condiciones
-            de calidad del agua en comunidades vulnerables. Con esta herramienta
-            se busca poder monitorear las cuencas hidrográficas permitiéndonos
-            generar alertas tempranas ante posibles fuentes de contaminación en
-            las cuencas. El desarrollo del proyecto se realiza con colaboración
-            de la universidad de Bath del Reino Unido donde por medio de
-            diferentes tecnologías se quiere conocer el estado del agua.
+          En el año 2017 en una colaboración entre Bath University y la universidad de los andes apoyo una misión en Leticia y sus alrededores para el monitoreo de agua en comunidades usando Sensoagua V3 que adicional a los 4 parámetros que puede medir Sensoagua V2 este tiene la la deteccipón de Hg. Las actividades desarrolladas fueron: 
           </p>
           <ul>
             <li>
-              Talleres con la comunidad para mostrar la importancia del cuidado
-              y monitoreo de la cuenca.
+            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
+            </li>
+            <li>
+            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
+            </li>
+            <li>
+            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
             </li>
           </ul>
-        </div>
-        <div className="description" >
-          <Slider {...settings} style={{maxHeight: '50vh'}} >
+      
+          <Carousel >
             <div>
               <img src={one} className="imagen" />
             </div>
             <div>
               <img src={two} className="imagen" />
             </div>
-            <div>
-              <img src={three} className="imagen" />
-            </div>
+           
             <div>
               <img src={four} className="imagen" />
             </div>
@@ -111,9 +108,8 @@ class Proyecto3 extends Component {
             <div>
               <img src={fourteen} className="imagen" />
             </div>
-          </Slider>
-        </div>
-        <div className="description">
+          </Carousel>
+
           <div className="patrocinadores">
             <div className="img_container">
               <img src={bath} alt="" className="patrocinador" />

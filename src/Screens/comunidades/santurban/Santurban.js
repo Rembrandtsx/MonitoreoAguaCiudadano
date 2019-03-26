@@ -34,6 +34,9 @@ import twentytwo from "./images/22.JPG";
 import twentythree from "./images/23.JPG";
 import twentyfour from "./images/24.JPG";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 class Santurban extends Component {
   render() {
     const { bp_large, bp_medium, bp_small } = bp;
@@ -58,14 +61,11 @@ class Santurban extends Component {
     return (
       <div className="detail">
         <div className="description">
+          <h2>Santurban</h2>
           <Mapa region={1} />
-        </div>
-
-        <div className="description">
-          <Slider {...settings}>
-            <div>
-              <img src={one} className="imagen" />
-            </div>
+        <div style={{height:'5vh'}}></div>
+        <Carousel >
+     
             <div>
               <img src={two} className="imagen" />
             </div>
@@ -126,24 +126,22 @@ class Santurban extends Component {
             <div>
               <img src={twentyone} className="imagen" />
             </div>
-            <div>
-              <img src={twentytwo} className="imagen" />
-            </div>
+      
             <div>
               <img src={twentythree} className="imagen" />
             </div>
-            <div>
-              <img src={twentyfour} className="imagen" />
-            </div>
-          </Slider>
-        </div>
+         
+            </Carousel>
 
-        <div className="description">
-          <h4>
+
+        
+      
+          <h4 style={{marginTop:'2vh'}}>
             Acción colectiva para la transformación de conflictos
             socio-ambientales en ecosistemas de páramo: Piloto en la subcuenca
             del río Suratá
           </h4>
+          <p>En  febrero del 2015 ha febrero del 2016 se trabajó con un grupo en las cuencas de los  ríos Suratá, en Santander, y Zulia y Pamplonita en Norte de Santander,asociadas al Complejo de Páramos Jurisdicciones Santurbán Berlín (CPJSB). Santurban  donde un grupo de la Universidad de los Andes conformado por Juan Camilo Cardenas, Juan Felipe Ortiz, Sebastián Arévalo, Johan De Aguas, Yaddi Miranda, Jorge Rincón, Daniel Rivera y Carlos Sánchez. Realizaron un proceso participativo con el propósito de apoyar la construcción de acuerdos colectivos y un sistema de monitoreo ciudadano para el manejo sostenible de las cuencas.</p>
           <ul>
             <li>
               Talleres comunitarios para la construcción participativa de
@@ -163,14 +161,9 @@ class Santurban extends Component {
               estratégicos de monitoreo seleccionados.
             </li>
           </ul>
-          Para más información consultar:{" "}
-          <a href="http://www.santurbanvisible.org/">
-            http://www.santurbanvisible.org
-          </a>
-        </div>
-
-        <div className="description">
-          <div className="patrocinadores">
+        
+       
+          <div className="patrocinadores" style={{marginTop:'2vh'}}>
             <div className="img_container">
               <img src={us_aid} alt="" className="patrocinador us_aid" />
             </div>

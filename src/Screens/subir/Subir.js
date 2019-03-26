@@ -288,7 +288,7 @@ Los parámetros de esta plantilla son:
                         }
                     `}</style>
                 </div>
-                <Footer />
+                
             </div>
         );
     }

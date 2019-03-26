@@ -22,6 +22,9 @@ class Comunidades extends Component {
 							<li>
 								<Link to="/comunidades-amazonas">Amazonas</Link>
 							</li>
+							<li>
+								<Link to="/comunidades-baru">Barú</Link>
+							</li>
 						</ul>
 					</div>
 				</div>

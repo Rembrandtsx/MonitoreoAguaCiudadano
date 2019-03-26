@@ -1,4 +1,15 @@
 import React, { Component } from 'react';
+import alba from './Equipo de trabajo/Alba-Avila.jpg';
+import lorenzo from './Equipo de trabajo/Di_lorenzo.jpg';
+import elena from './Equipo de trabajo/Elena_Bernalte.jpg';
+import felipe from './Equipo de trabajo/Felipe_Muñoz.jpg';
+import husserl from './Equipo de trabajo/Husserl-Johanna.png';
+import jaime from './Equipo de trabajo/Jaime_PEREZ.jpg';
+import jannis from './Equipo de trabajo/Jannis_Wenk.jpg';
+import jose from './Equipo de trabajo/Jose_Lopez.jpg';
+import juan from './Equipo de trabajo/Juan_Cardenas.JPG';
+import pedro from './Equipo de trabajo/Pedro_Estrela.jpg';
+import sebastian from './Equipo de trabajo/Sebastian_arevalo.jpg';
 
 import { bp, colors } from '../../theme';
 
@@ -11,68 +22,82 @@ class EquipoTrabajo extends Component {
 				<div className="detail">
 					<div className="description">
 						<center>
-							<h3>
+							<h2>
 								Equipo de trabajo
-                           </h3>
-							<h5>
+                           </h2>
+							<h3>
 								Uniandes
-                           </h5>
-							Juan Camilo Cárdenas- facultad de Economía
+                           </h3>
+						   
+						   <a href="https://academia.uniandes.edu.co/AcademyCv/jccarden ">Juan Camilo Cárdenas </a>
+							- facultad de Economía <br></br>
+							<img src={juan} className="people"></img>
 <br></br>
 
 
-							Felipe Muñoz- Departamento de Ingeniería Química
-							
+							<a href="https://academia.uniandes.edu.co/AcademyCv/fmunoz ">Felipe Muñoz</a>  - Departamento de Ingeniería Química<br></br>
+							<img src={felipe} className="people"></img>
  <br></br>
 
-							Johana Husserl- Departamento Civil y Ambiental
-							
+							<a href="https://academia.uniandes.edu.co/AcademyCv/jhusserl ">Johana Husserl</a> - Departamento Civil y Ambiental<br></br>
+							<img src={husserl} className="people"></img>
  <br></br>
+							<a href="https://academia.uniandes.edu.co/AcademyCv/a-avila ">Alba Ávila</a>
+							 -  Departamento de Ingeniería Eléctrica y Electrónica<br></br>
+							<img src={alba} className="people"></img>
 
-							Alba Ávila-  Departamento de Ingeniería Eléctrica y Electrónica
-							
-							
 <br></br>
-							Jaime Andrés Peréz- Departamento de Ingeniería Eléctrica y Electrónica
-							
+							Jaime Andrés Peréz- Departamento de Ingeniería Eléctrica y Electrónica<br></br>
+							<img src={jaime} className="people"></img>
  <br></br>
 
 							Sebastián Arévalo- Departamento de Ingeniería Eléctrica y Electrónica <br></br>
+							<img src={sebastian} className="people"></img>
 							<br></br>
-
-							<h5>
+							Carlos Alejandro Jimenez- Departamento de Ingeniería Eléctrica y Electrónica 
+							<br></br>
+							Jose David Lopez Rivas - Facultad de Economía 
+							<br></br>
+							<img src={jose} className="people"></img>
+							<br></br>
+							<h3>
 								Internacionales
-                           </h5>
-							2017-2019
- 
- 
- 
- Bath University, UK
-<br></br>
-							Funding Newton Institutional Links-2017
-<br></br>
-							Mirella Di Lorenzo,  Department of Chemical Engineering
-<br></br>
+                           </h3>
+						   <b><h4>2017-2019
 
 
-							Elena Bernalte, Department of Chemical Engineering
+
+Bath University, UK</h4></b>
 <br></br>
-
-
-							Pedro Estrela,  Department of Electronic & Electrical Engineering
+<h5>Funding Newton Institutional Links-2017</h5>
 							
+<br></br>
+							<a href="https://researchportal.bath.ac.uk/en/persons/mirella-di-lorenzo ">Mirella Di Lorenzo</a>
+							,  Department of Chemical Engineering<br></br>
+							<img src={lorenzo} className="people"></img>
+<br></br>
+
+							<a href="https://www.researchgate.net/profile/Elena_Bernalte_Morgado ">Elena Bernalte</a>
+							, Department of Chemical Engineering<br></br>
+							<img src={elena} className="people"></img>
+<br></br>
+
+							<a href="https://researchportal.bath.ac.uk/en/persons/pedro-estrela ">Pedro Estrela</a>
+							,  Department of Electronic & Electrical Engineering<br></br>
+							<img src={pedro} className="people"></img>
+ <br></br>
+							<a href="https://researchportal.bath.ac.uk/en/persons/jannis-wenk ">Jannis Wenk</a>
+							,  Department of Chemical Engineering<br></br>
+							<img src={jannis} className="people"></img>
+
+
  <br></br>
 
-							Jannis Wenk,  Department of Chemical Engineering
-							
-							
-							
- <br></br>
-
-							2013-2105
+							<h5>2013-2015</h5>
 <br></br>
-							Donald Blair- PublicLab y MIT Media Lab
-							
+							<a href="https://nautiluslive.org/people/donald-blair ">Donald Blair</a>
+							 - PublicLab y MIT Media Lab<br></br>
+
  <br></br>
 
 
@@ -122,6 +147,9 @@ class EquipoTrabajo extends Component {
 						@media ${bp_small} {
 							margin-right: 0;
 						}
+					}
+					.people{
+						max-height: 15vh;
 					}
 				`}</style>
 			</div>
