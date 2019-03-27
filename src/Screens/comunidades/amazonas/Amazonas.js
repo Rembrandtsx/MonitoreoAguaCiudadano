@@ -49,6 +49,7 @@ class Proyecto3 extends Component {
     return (
       <div className="detail">
         <div className="description">
+        <h2>Amazonas</h2>
           <Mapa region={3} />
         
           <h3>Monitoreo de agua en comunidades vulnerables de Colombia</h3>

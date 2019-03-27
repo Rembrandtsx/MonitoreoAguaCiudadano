@@ -33,12 +33,7 @@ class Footer extends Component {
               2018
             </span>
           </p>
-          <p align="center">
-            <span lang="ES-CO">
-              &nbsp;Página desarrollada por{" "}
-              <a href="http://fabioespinosa.com">Fabio Espinosa</a>
-            </span>
-          </p>
+          
         </div>
         <style jsx>{`
           .footer {
