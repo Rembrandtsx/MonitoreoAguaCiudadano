@@ -191,7 +191,9 @@ class Proyecto3 extends Component {
             flex-direction: column;
             justify-content: center;
           }
-
+          p{
+            text-align: justify;
+          }
         `}</style>
         <style jsx global>{`
           .slick-prev:before,

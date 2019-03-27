@@ -29,20 +29,20 @@ class EquipoTrabajo extends Component {
 								Uniandes
                            </h3>
 						   
-						   <a href="https://academia.uniandes.edu.co/AcademyCv/jccarden ">Juan Camilo Cárdenas </a>
+						   <a target="_blank"href="https://academia.uniandes.edu.co/AcademyCv/jccarden ">Juan Camilo Cárdenas </a>
 							- facultad de Economía <br></br>
 							<img src={juan} className="people"></img>
 <br></br>
 
 
-							<a href="https://academia.uniandes.edu.co/AcademyCv/fmunoz ">Felipe Muñoz</a>  - Departamento de Ingeniería Química<br></br>
+							<a target="_blank"target="_blank"href="https://academia.uniandes.edu.co/AcademyCv/fmunoz ">Felipe Muñoz</a>  - Departamento de Ingeniería Química<br></br>
 							<img src={felipe} className="people"></img>
  <br></br>
 
-							<a href="https://academia.uniandes.edu.co/AcademyCv/jhusserl ">Johana Husserl</a> - Departamento Civil y Ambiental<br></br>
+							<a target="_blank"href="https://academia.uniandes.edu.co/AcademyCv/jhusserl ">Johana Husserl</a> - Departamento Civil y Ambiental<br></br>
 							<img src={husserl} className="people"></img>
  <br></br>
-							<a href="https://academia.uniandes.edu.co/AcademyCv/a-avila ">Alba Ávila</a>
+							<a target="_blank"href="https://academia.uniandes.edu.co/AcademyCv/a-avila ">Alba Ávila</a>
 							 -  Departamento de Ingeniería Eléctrica y Electrónica<br></br>
 							<img src={alba} className="people"></img>
 
@@ -72,21 +72,21 @@ Bath University, UK</h4></b>
 <h5>Funding Newton Institutional Links-2017</h5>
 							
 <br></br>
-							<a href="https://researchportal.bath.ac.uk/en/persons/mirella-di-lorenzo ">Mirella Di Lorenzo</a>
+							<a target="_blank"href="https://researchportal.bath.ac.uk/en/persons/mirella-di-lorenzo ">Mirella Di Lorenzo</a>
 							,  Department of Chemical Engineering<br></br>
 							<img src={lorenzo} className="people"></img>
 <br></br>
 
-							<a href="https://www.researchgate.net/profile/Elena_Bernalte_Morgado ">Elena Bernalte</a>
+							<a target="_blank"href="https://www.researchgate.net/profile/Elena_Bernalte_Morgado ">Elena Bernalte</a>
 							, Department of Chemical Engineering<br></br>
 							<img src={elena} className="people"></img>
 <br></br>
 
-							<a href="https://researchportal.bath.ac.uk/en/persons/pedro-estrela ">Pedro Estrela</a>
+							<a target="_blank"href="https://researchportal.bath.ac.uk/en/persons/pedro-estrela ">Pedro Estrela</a>
 							,  Department of Electronic & Electrical Engineering<br></br>
 							<img src={pedro} className="people"></img>
  <br></br>
-							<a href="https://researchportal.bath.ac.uk/en/persons/jannis-wenk ">Jannis Wenk</a>
+							<a target="_blank"href="https://researchportal.bath.ac.uk/en/persons/jannis-wenk ">Jannis Wenk</a>
 							,  Department of Chemical Engineering<br></br>
 							<img src={jannis} className="people"></img>
 
@@ -95,7 +95,7 @@ Bath University, UK</h4></b>
 
 							<h5>2013-2015</h5>
 <br></br>
-							<a href="https://nautiluslive.org/people/donald-blair ">Donald Blair</a>
+							<a target="_blank"href="https://nautiluslive.org/people/donald-blair ">Donald Blair</a>
 							 - PublicLab y MIT Media Lab<br></br>
 
  <br></br>

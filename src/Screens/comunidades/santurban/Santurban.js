@@ -203,7 +203,9 @@ class Santurban extends Component {
             font-weight: bold;
             font-style: italic;
           }
-
+          p{
+            text-align: justify;
+          }
           .description {
             font-size: 1.4rem;
             background-color: #fff;

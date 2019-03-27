@@ -123,6 +123,9 @@ class Proyecto4 extends Component {
           .description *{
             padding-top:1em;
           }
+          p{
+            text-align: justify;
+          }
           .patrocinadores {
             display: flex;
             justify-content: space-around;

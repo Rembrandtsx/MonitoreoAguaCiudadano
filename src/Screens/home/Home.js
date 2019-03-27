@@ -75,7 +75,7 @@ class Content extends Component {
                             box-shadow: ${shadow_light};
                             padding: 3rem;
                             padding: 4.5rem;
-
+                            height:100%;
                             &:not(:last-child) {
                                 margin-bottom: 5rem;
                             }

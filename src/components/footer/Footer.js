@@ -43,7 +43,7 @@ class Footer extends Component {
         <style jsx>{`
           .footer {
             background-color: ${color_grey_dark_1};
-            height: 30rem;
+            min-height:45vh;
           }
 
           .container {

@@ -9,18 +9,18 @@ class Header extends Component {
         const { bp_small, bp_smallest, bp_medium } = bp;
         return (
             <header className="header">
-                <div className="logo1">
+               
                     <img
                         src={logo_uniandes}
                         alt="Universidad de los Andes"
                         className="logo_uniandes"
                     />
-                </div>
-                <div className="page-header">
+              
+                
                     <h1>Monitoreo de Agua en Colombia</h1>
-                </div>
+               
 
-                <div className="logo2" />
+             
                 <style jsx>{`
                     .logo1,
                     h1,
@@ -37,15 +37,19 @@ class Header extends Component {
                     }
                     .header {
                         font-size: 1.4rem;
-                        height: 8rem;
+                        height: 15vh;
                         background-color: #fff;
                         border-bottom: 1px solid ${color_grey_light_2};
                         display: flex;
                         justify-content: space-around;
+                        
+
                         align-items: center;
                         @media ${bp_medium} {
+                            flex-direction:column;
                             h1 {
                                 font-size: 2.5rem;
+                                width: 100vw;
                             }
                         }
 
@@ -57,12 +61,11 @@ class Header extends Component {
                     }
 
                     .logo_uniandes {
-                        margin-top: 0.8rem;
-                        margin-left: auto;
-                        width: 170px;
-
-                        @media ${bp_small} {
-                            width: 80px;
+                        
+                        height:100%;
+                        @media ${bp_medium} {
+                            height:auto;
+                            max-width:20vw;
                         }
                     }
                 `}</style>

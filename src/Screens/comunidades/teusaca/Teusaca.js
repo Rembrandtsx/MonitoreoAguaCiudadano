@@ -17,6 +17,7 @@ class Teusaca extends Component {
 		return (
 			<div className="detail">
 				<div className="description">
+					<h2>Teusacá</h2>
 					<Mapa region={2} />
 					<div style={{height:'5vh'}}></div>
 					
@@ -29,17 +30,17 @@ class Teusaca extends Component {
 
 					Monitoreo de río Teusaca: el acueducto tiene a su disposición 10 sondas de agua para que sus pobladores reporten datos de varios puntos del rio Teusaca. El acueducto genero su propia plataforma con la colaboración de ubilogica. La cual puede consultarse en <a href="http://progresaresp.com/mapa-monitoreo-y-sistema-de-alertas-tempranas/ ">http://progresaresp.com/mapa-monitoreo-y-sistema-de-alertas-tempranas/ </a>
 					</p>
-				</div>
-				<div className="description video_container">
+				
+				<div className="video_container">
 					<iframe className="video" height="100%" src="https://www.youtube.com/embed/BqPtlJSoGrQ" />
 				</div>
-				<div className="description">
+				
 					<div className="patrocinadores">
 						<div className="img_container">
 							<img src={progresaresp} alt="" className="patrocinador" />
 						</div>
 					</div>
-				</div>
+					</div>
 
 				<style jsx>{`
 					.detail {
@@ -88,7 +89,9 @@ class Teusaca extends Component {
 							margin-right: 0;
 						}
 					}
-
+					p{
+						text-align: justify;
+					}
 					.patrocinadores {
 						display: flex;
 						justify-content: space-around;
@@ -113,16 +116,17 @@ class Teusaca extends Component {
 					.video_container {
 						display: flex;
 						justify-content: center;
-					}
-
-					.video {
-						height: 600px;
-						width: 80%;
-
+					  }
+			
+					  .video {
+						
+						width: 100%;
+						min-height: 70vh;
 						@media ${bp_medium} {
-							width: 100%;
+						  width: 100%;
+						  min-height: 30vh;
 						}
-					}
+					  }
 				`}</style>
 			</div>
 		);
