@@ -6,6 +6,16 @@ import { bp, colors } from "../../../theme";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import mapa from '../comunidadesGen/mapa.png';
+import img1 from './Boyaca- Samaca/img1.jpg';
+import img2 from './Boyaca- Samaca/img2.jpg'
+import img3 from './Boyaca- Samaca/img3.jpg'
+import img4 from './Boyaca- Samaca/img4.jpg'
+import img5 from './Boyaca- Samaca/img5.jpg'
+import img6 from './Boyaca- Samaca/img6.jpg';
+
+import uniandes from '../comunidadesGen/logo-uniandes.png'
+
 
 class Proyecto7 extends Component {
   render() {
@@ -33,77 +43,41 @@ class Proyecto7 extends Component {
       <div className="detail">
         <div className="description">
         <h2>Boyacá</h2>
-          <Mapa region={3} />
-        
+          
+        <div className="image-container">
+									<img src={mapa} />
+									<div className="after">PROXIMAMENTE</div>
+				</div>
           <h3>Monitoreo de agua en comunidades vulnerables de Colombia</h3>
-          <p>
-          En el año 2017 en una colaboración entre Bath University y la universidad de los andes apoyo una misión en Leticia y sus alrededores para el monitoreo de agua en comunidades usando Sensoagua V3 que adicional a los 4 parámetros que puede medir Sensoagua V2 este tiene la la deteccipón de Hg. Las actividades desarrolladas fueron: 
-          </p>
-          <ul>
-            <li>
-            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
-            </li>
-            <li>
-            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
-            </li>
-            <li>
-            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
-            </li>
-          </ul>
       
           <Carousel >
-            {/* <div>
-              <img src={one} className="imagen" />
+            <div>
+              <img src={img1} className="imagen" />
             </div>
             <div>
-              <img src={two} className="imagen" />
+              <img src={img2} className="imagen" />
             </div>
            
             <div>
-              <img src={four} className="imagen" />
+              <img src={img3} className="imagen" />
             </div>
             <div>
-              <img src={five} className="imagen" />
+              <img src={img4} className="imagen" />
             </div>
             <div>
-              <img src={six} className="imagen" />
+              <img src={img5} className="imagen" />
             </div>
             <div>
-              <img src={seven} className="imagen" />
+              <img src={img6} className="imagen" />
             </div>
-            <div>
-              <img src={eight} className="imagen" />
-            </div>
-            <div>
-              <img src={nine} className="imagen" />
-            </div>
-            <div>
-              <img src={ten} className="imagen" />
-            </div>
-            <div>
-              <img src={eleven} className="imagen" />
-            </div>
-            <div>
-              <img src={twelve} className="imagen" />
-            </div>
-            <div>
-              <img src={thirteen} className="imagen" />
-            </div>
-            <div>
-              <img src={fourteen} className="imagen" />
-            </div> */}
           </Carousel>
-
+          <h3>Patrocinadores y Colaboradores</h3>
           <div className="patrocinadores">
-            {/* <div className="img_container">
-              <img src={bath} alt="" className="patrocinador" />
+            
+          <div className="img_container">
+              <img src={uniandes} alt="" className="patrocinador" />
             </div>
-            <div className="img_container">
-              <img src={colciencias} alt="" className="patrocinador" />
-            </div>
-            <div className="img_container">
-              <img src={newton} alt="" className="patrocinador" />
-            </div> */}
+         
           </div>
         </div>
 

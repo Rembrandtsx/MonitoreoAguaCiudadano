@@ -89,7 +89,7 @@ class EquipoTrabajo extends Component {
 								</div>
 
 								<div className="member-info">
-									<h4><a target="_blank" href="http://jaimeandres.org">Jaime Andrés Peréz </a></h4>
+									<h4><a target="_blank" href="http://jaimeandres.org">Jaime Andrés Peréz-Taborda </a></h4>
 									<span>Departamento de Ingeniería Eléctrica y Electrónica</span>
 								</div>
 							</div>

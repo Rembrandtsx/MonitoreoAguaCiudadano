@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { bp, colors } from "../../theme";
-import sensoaguav3 from "./sensoaguav3.png";
+import sensoaguav3 from "./Sonda de Agua/SensoraguaV3.PNG";
 
 class SensoaguaV3 extends Component {
   render() {

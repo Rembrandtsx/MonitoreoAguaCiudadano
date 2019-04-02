@@ -63,7 +63,7 @@ class Multimedia extends Component {
           <p>New device to protect communities in Colombia from unsafe water </p>
           <a href="https://phys.org/news/2018-06-device-colombia-unsafe.html?utm_source=Headlines&utm_campaign=0ddbd64ae9-Headlines_Test_2_20_01_2015_COPY_01&utm_medium=email&utm_term=0_a2c1ab21c6-0ddbd64ae9-322468153&ct=t(Headlines_031117_COPY_01)&mc_cid=0ddbd64ae9&mc_eid=41f60a2a18 ">https://phys.org/news/2018-06-device-colombia-unsafe.html?utm_source=Headlines&utm_campaign=0ddbd64ae9-Headlines_Test_2_20_01_2015_COPY_01&utm_medium=email&utm_term=0_a2c1ab21c6-0ddbd64ae9-322468153&ct=t(Headlines_031117_COPY_01)&mc_cid=0ddbd64ae9&mc_eid=41f60a2a18 </a>
           <h3>Twitter</h3>
-          <a className="twitter-timeline" href="https://twitter.com/MonitoreoCiuda2?ref_src=twsrc%5Etfw"></a>
+          <a className="twitter-timeline" href="https://twitter.com/MonitoreoCiuda2?ref_src=twsrc%5Etfw">MonitoreoCiudadano en Twitter</a>
 
         </div>
 

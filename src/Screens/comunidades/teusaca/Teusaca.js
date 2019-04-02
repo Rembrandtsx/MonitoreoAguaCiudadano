@@ -4,6 +4,8 @@ import { bp, colors } from '../../../theme';
 import progresaresp from './progresaresp.png';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+
+import uniandes from '../comunidadesGen/logo-uniandes.png'
 class Teusaca extends Component {
 	render() {
 		const { bp_large, bp_medium, bp_small } = bp;
@@ -34,12 +36,17 @@ class Teusaca extends Component {
 				<div className="video_container">
 					<iframe className="video" height="100%" src="https://www.youtube.com/embed/BqPtlJSoGrQ" />
 				</div>
-				
+				<h3>Patrocinadores y Colaboradores</h3>
 					<div className="patrocinadores">
 						<div className="img_container">
 							<img src={progresaresp} alt="" className="patrocinador" />
 						</div>
+						<div className="img_container">
+              <img src={uniandes} alt="" className="patrocinador" />
+            </div>
 					</div>
+			
+
 					</div>
 
 				<style jsx>{`

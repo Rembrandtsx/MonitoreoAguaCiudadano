@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-import Mapa from "../../../components/home/deck_mapa/mapa";
+
 import { bp, colors } from "../../../theme";
+import mapa from '../comunidadesGen/mapa.png';
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import uniandes from '../comunidadesGen/logo-uniandes.png'
 class Proyecto5 extends Component {
   render() {
     const { bp_large, bp_medium, bp_small } = bp;
@@ -32,39 +33,23 @@ class Proyecto5 extends Component {
     return (
       <div className="detail">
         <div className="description">
-        <h2>Eje Ambiental</h2>
-          <Mapa region={3} />
-        
+        <h1>Eje Ambiental</h1>
+        <div className="image-container">
+									<img src={mapa} />
+									<div className="after">PROXIMAMENTE</div>
+				</div>
           <h3>Monitoreo de agua en comunidades vulnerables de Colombia</h3>
-          <p>
-          En el año 2017 en una colaboración entre Bath University y la universidad de los andes apoyo una misión en Leticia y sus alrededores para el monitoreo de agua en comunidades usando Sensoagua V3 que adicional a los 4 parámetros que puede medir Sensoagua V2 este tiene la la deteccipón de Hg. Las actividades desarrolladas fueron: 
-          </p>
-          <ul>
-            <li>
-            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
-            </li>
-            <li>
-            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
-            </li>
-            <li>
-            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
-            </li>
-          </ul>
       
           <Carousel >
             
           </Carousel>
-
+          <h3>Patrocinadores y Colaboradores</h3>
           <div className="patrocinadores">
-            {/* <div className="img_container">
-              <img src={bath} alt="" className="patrocinador" />
-            </div>
+            {
             <div className="img_container">
-              <img src={colciencias} alt="" className="patrocinador" />
+              <img src={uniandes} alt="" className="patrocinador" />
             </div>
-            <div className="img_container">
-              <img src={newton} alt="" className="patrocinador" />
-            </div> */}
+           }
           </div>
         </div>
 

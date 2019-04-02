@@ -6,6 +6,7 @@ import { bp, colors } from "../../../theme";
 import bath from "./bath.png";
 import colciencias from "./colciencias.png";
 import newton from "./newton.png";
+import uniandes from '../comunidadesGen/logo-uniandes.png'
 
 import one from "./images/1.jpg";
 import two from "./images/2.jpg";
@@ -110,7 +111,7 @@ class Proyecto3 extends Component {
               <img src={fourteen} className="imagen" />
             </div>
           </Carousel>
-
+          <h3>Patrocinadores</h3>
           <div className="patrocinadores">
             <div className="img_container">
               <img src={bath} alt="" className="patrocinador" />
@@ -120,6 +121,9 @@ class Proyecto3 extends Component {
             </div>
             <div className="img_container">
               <img src={newton} alt="" className="patrocinador" />
+            </div>
+            <div className="img_container">
+              <img src={uniandes} alt="" className="patrocinador" />
             </div>
           </div>
         </div>

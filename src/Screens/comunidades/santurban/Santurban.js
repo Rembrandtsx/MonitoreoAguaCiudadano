@@ -5,11 +5,13 @@ import Slider from "react-slick";
 
 import us_aid from "./us_aid.png";
 import foro_nacional_por_colombia from "./foro_nacional_por_colombia.png";
+import public_lab from './public-lab.png'
+import uniandes from '../comunidadesGen/logo-uniandes.png'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import one from "./images/1.JPG";
+
 import two from "./images/2.JPG";
 import three from "./images/3.JPG";
 import four from "./images/4.jpg";
@@ -32,7 +34,14 @@ import twenty from "./images/20.JPG";
 import twentyone from "./images/21.JPG";
 import twentytwo from "./images/22.JPG";
 import twentythree from "./images/23.JPG";
-import twentyfour from "./images/24.JPG";
+import one from "./Santurban/IMG_4987.jpg";
+
+
+
+
+
+
+
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -130,6 +139,9 @@ class Santurban extends Component {
             <div>
               <img src={twentythree} className="imagen" />
             </div>
+            <div>
+              <img src={one} className="imagen" />
+            </div>
          
             </Carousel>
 
@@ -162,7 +174,7 @@ class Santurban extends Component {
             </li>
           </ul>
         
-       
+          <h3>Patrocinadores y Colaboradores</h3>
           <div className="patrocinadores" style={{marginTop:'2vh'}}>
             <div className="img_container">
               <img src={us_aid} alt="" className="patrocinador us_aid" />
@@ -173,6 +185,12 @@ class Santurban extends Component {
                 alt=""
                 className="patrocinador"
               />
+            </div>
+            <div className="img_container">
+              <img src={public_lab} alt="" className="patrocinador" />
+            </div>
+             <div className="img_container">
+              <img src={uniandes} alt="" className="patrocinador" />
             </div>
           </div>
         </div>

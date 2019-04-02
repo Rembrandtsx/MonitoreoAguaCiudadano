@@ -12,7 +12,7 @@ import eafit from "./img/Colaboradores_patrocinadores/EAFIT.png"
 import fundahernan from "./img/Colaboradores_patrocinadores/fundahernan.jpeg"
 import idrc from "./img/Colaboradores_patrocinadores/idrc.png"
 import UCartagena from "./img/Colaboradores_patrocinadores/UCartagena.jpg"
-import uniandes from "./img/Colaboradores_patrocinadores/uniandes.png"
+import uniandes from "../comunidadesGen/logo-uniandes.png"
 
 class Proyecto6 extends Component {
   render() {
@@ -50,7 +50,7 @@ class Proyecto6 extends Component {
 
 
           <img src={imageBaru} />
-
+          <h3>Patrocinadores y Colaboradores</h3>
           <div className="patrocinadores">
             <div className="img_container">
               <img src={corpAutonoma} alt="" className="patrocinador" />
