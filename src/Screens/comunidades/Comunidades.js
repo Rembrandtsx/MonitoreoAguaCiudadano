@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import { bp, colors } from '../../theme';
+import santurban from './comunidadesGen/santurban.JPG';
+import teusaca from './comunidadesGen/tuesaca.jpg';
+import amazonas from './comunidadesGen/amazonas.jpg';
+import boyaca from './comunidadesGen/boyaca.jpg';
+import baru from './comunidadesGen/baru.jpg';
+import eje from './comunidadesGen/eje.jpg';
+import uniandes from './comunidadesGen/uniandes.png';
 
 class Comunidades extends Component {
 	render() {
@@ -12,20 +19,56 @@ class Comunidades extends Component {
 				<div className="description">
 					<h1>Comunidades</h1>
 					<div className="contenido">
-						<ul>
-							<li>
-								<Link to="/comunidades-santurban">Santurban</Link>
-							</li>
-							<li>
-								<Link to="/comunidades-teusaca">Teusaca</Link>
-							</li>
-							<li>
-								<Link to="/comunidades-amazonas">Amazonas</Link>
-							</li>
-							<li>
-								<Link to="/comunidades-baru">Barú</Link>
-							</li>
-						</ul>
+						<div>
+							<Link to="/comunidades-santurban">
+								<div className="image-container">
+									<img src={santurban} />
+									<div className="after">Santurban</div>
+								</div>
+							</Link>
+						</div>
+
+						<div>
+							<Link to="/comunidades-teusaca">
+								<div className="image-container">
+									<img src={teusaca} />
+									<div className="after">Teusacá</div>
+								</div>
+							</Link>
+						</div><div>
+							<Link to="/comunidades-amazonas">
+								<div className="image-container">
+									<img src={amazonas} />
+									<div className="after">Amazonas</div>
+								</div></Link>
+						</div><div>
+							<Link to="/comunidades-baru">
+								<div className="image-container">
+									<img src={baru} />
+									<div className="after">Barú</div>
+								</div>
+							</Link>
+						</div><div>
+							<Link to="/comunidades-uniandes">
+							<div className="image-container">
+									<img src={uniandes} />
+									<div className="after">Uniandes</div>
+								</div>
+								</Link>
+						</div><div>
+							<Link to="/comunidades-eje-ambiental">
+							<div className="image-container">
+									<img src={eje} />
+									<div className="after">Eje Ambiental</div>
+								</div></Link>
+						</div><div>
+							<Link to="/comunidades-boyaca">
+								<div className="image-container">
+									<img src={boyaca} />
+									<div className="after">Boyacá</div>
+								</div>
+							</Link>
+						</div>
 					</div>
 				</div>
 				<style jsx>{`
@@ -50,8 +93,8 @@ class Comunidades extends Component {
 						}
 					}
 
-					.contenido {
-						margin-left: 30px;
+					.contenido > div {
+						margin-top:5vh;
 					}
 					.description {
 						font-size: 1.4rem;

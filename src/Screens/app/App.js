@@ -67,7 +67,6 @@ class App extends Component {
               box-shadow: ${shadow_light};
               padding: 3rem;
               padding: 4.5rem;
-              color: black;
               &:not(:last-child) {
                 margin-bottom: 5rem;
               }

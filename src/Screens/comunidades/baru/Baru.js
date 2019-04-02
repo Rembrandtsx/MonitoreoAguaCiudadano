@@ -14,7 +14,7 @@ import idrc from "./img/Colaboradores_patrocinadores/idrc.png"
 import UCartagena from "./img/Colaboradores_patrocinadores/UCartagena.jpg"
 import uniandes from "./img/Colaboradores_patrocinadores/uniandes.png"
 
-class Proyecto4 extends Component {
+class Proyecto6 extends Component {
   render() {
     const { bp_large, bp_medium, bp_small } = bp;
     const {
@@ -177,4 +177,4 @@ class Proyecto4 extends Component {
   }
 }
 
-export default Proyecto4;
+export default Proyecto6;

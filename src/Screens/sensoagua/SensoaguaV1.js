@@ -8,7 +8,7 @@ class SensoaguaV1 extends Component {
 		const { color_grey_light_1, color_grey_light_2, shadow_light } = colors;
 		return (
 			<div className="detail">
-				<div className="description">
+				<div className="description justified">
 					<h3>Sensoagua V1</h3>
 					<p>
 					Sensoagua versión 1 (Sensoagua V1) fue desarrollado en el 2015 con el propósito de medir temperatura y conductividad. Esta sonda de dos parámetros cuenta con módulos de electrónica de adquisición, comunicación y alimentación. La interface a usuario es a través de un applicativo web (https://economia.uniandes.edu.co/centros-de-investigacion/cede/web-de-proyectos-cede/santurban-visible)y los datos son visibilizados en  WEB page monitoreo ciudadano 

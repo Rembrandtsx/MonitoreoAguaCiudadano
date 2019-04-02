@@ -8,7 +8,7 @@ class SensoaguaV2 extends Component {
 		const { color_grey_light_1, color_grey_light_2, shadow_light } = colors;
 		return (
 			<div className="detail">
-				<div className="description">
+				<div className="description justified">
 					<h3>Sensoagua V2</h3>
 					<p>
 					Sensoagua versión 2 (Sensoagua V2)   fue desarrollado en el 2016 con el propositivo de medir temperatura, conductividad, oxígeno disuelto y pH. Esta sonda de medición de 4 parámetros físico químicos cuenta con una interface de usuario de app móvil desarrollada en Android que se comunica al celular vía Bluetooth.  Calprobe permite realizar mediciones individuales o de los 4 parámetros con georreferenciación y tres formas de transmisión de datos: envió por mensaje de texto o correo electrónico y la electrónica de adquisición que cuenta con una batería de para 8 horas de uso. Además de permitir calibración de los sensores.  Dentro de las características que se encuentran en la aplicación se puede obtener la localización geográfica y visualizarla en un mapa.  Los datos enviados se cargan a una aplicación web pública: <a href="https://monitoreociudadano.uniandes.edu.co/">https://monitoreociudadano.uniandes.edu.co/</a>  

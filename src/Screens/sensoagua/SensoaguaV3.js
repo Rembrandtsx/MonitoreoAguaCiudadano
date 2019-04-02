@@ -8,7 +8,7 @@ class SensoaguaV3 extends Component {
     const { color_grey_light_1, color_grey_light_2, shadow_light } = colors;
     return (
       <div className="detail">
-        <div className="description">
+        <div className="description justified">
           <h3>Sensoagua V3</h3>
           <p>
             <strong>Subsistema de Sensores</strong>

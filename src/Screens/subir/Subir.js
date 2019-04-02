@@ -92,8 +92,9 @@ class Subir extends Component {
         return (
             <div>
                 <div className="subir">
-                    <div className="description">
+                    <div className="description justified">
                         <div className="instrucciones">
+                        <h1>Cargar Datos</h1>
                             <p>
                                 En este enlace se encuentra la descripción para cargar mediciones. Las mediciones adquiridas con la app móvil deben registrarse por cada usuario en un archivo de Excel. Este archivo debe cargarse manualmente en formato CSV a la página Web. 
                                 El formato que deben tener se presenta a continuación: 
@@ -229,11 +230,7 @@ Los parámetros de esta plantilla son:
                     <style jsx>{`
                         .subir {
                             padding: 20px;
-                            color: black;
-                        }
-                        .instrucciones,
-                        .instrucciones_dropzone {
-                            font-size: 1.6em;
+                            
                         }
 
                         .captura {

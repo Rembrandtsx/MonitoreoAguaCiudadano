@@ -5,6 +5,9 @@ import componentes from './images/componentes.png';
 import pdf from './manual.pdf';
 import Footer from '../../components/footer/Footer';
 import { Link, withRouter } from "react-router-dom";
+import sonda1 from '../sensoagua/Sonda de Agua/v1.jpg';
+import sonda2 from '../sensoagua/Sonda de Agua/v2.jpg';
+import sonda3 from '../sensoagua/Sonda de Agua/v3.jpg';
 class Equipo extends Component {
 	render() {
 		const { bp_large, bp_medium, bp_small } = bp;
@@ -13,25 +16,38 @@ class Equipo extends Component {
 			<div>
 				<div className="detail">
 					<div className="description">
+						<h1>Sondas</h1>
+						<p className="justified">Aguasense es una sonda de agua que permite la medición de 1,4 y 6 parámetros físico químicos: pH, Conductividad, temperatura, C=2 y turbiedad. Esta consta de componentes electrónicos, una interfaz vía un app móvil y una plataforma de visualización donde se registran la posición donde fueron tomadas las medidas y los valores estimados de esos parámetros. 
+						</p>
 						<center>
 
 							<Link to="/sensoagua-v1">
-								Sonda Agua 1
-					</Link>
+							<div className="image-container">
+    							<img src={sonda1} />
+    							<div className="after">Sonda Agua 1</div>
+							</div>
+								
+							</Link>
 							<br></br>
 
 							<Link to="/sensoagua-v2">
-								Sonda Agua 2
-					</Link>
+							<div className="image-container">
+    							<img src={sonda2} />
+    							<div className="after">Sonda Agua 2</div>
+							</div>
+							</Link>
 							<br></br>
 
 							<Link to="/sensoagua-v3">
-								Sonda Agua 3
-					</Link>
+							<div className="image-container">
+    							<img src={sonda3} />
+    							<div className="after">Sonda Agua 3</div>
+							</div>
+							</Link>
 							<br></br>
 						</center>
 
-						<h1>Monitoreo de agua en comunidades vulnerables de Colombia</h1>
+						<h2>Monitoreo de agua en comunidades vulnerables de Colombia</h2>
 
 						<p>
 							Con el prop&oacute;sito de poder desarrollar un sistema de monitoreo de calidad del agua se
@@ -112,6 +128,8 @@ class Equipo extends Component {
 							mediciones realizadas con la posici&oacute;n donde se realiz&oacute; la medici&oacute;n.
 							&nbsp;
 						</p>
+						<h3>Referencias</h3>
+						<p className="reference">Mismo recurso, diferentes conflictos: Un análisis de la relación entre oro, conflicto y criminalidad en seis departamentos colombianos. Angelika Rettberg,       Juan Camilo Cárdenas y      Juan Felipe Ortiz‐Riomalo. Noviembre 2017. Documentos CEDE ISSN 1657-7191 Edición electrónica. </p>
 					</div>
 					<style jsx>{`
 						.detail {

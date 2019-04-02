@@ -18,6 +18,10 @@ import Teusaca from "./Screens/comunidades/teusaca/Teusaca";
 import Santurban from "./Screens/comunidades/santurban/Santurban";
 import Amazonas from "./Screens/comunidades/amazonas/Amazonas";
 import Baru from "./Screens/comunidades/baru/Baru";
+import Boyaca from "./Screens/comunidades/boyaca/Boyaca";
+import uniandes from "./Screens/comunidades/uniandes/Uniandes";
+import eje from "./Screens/comunidades/eje-ambiental/EjeAmbiental";
+
 
 import ActividadesAmazonas from "./Screens/comunidades/amazonas/sub_categories/actividades";
 import ActividadesSanturban from "./Screens/comunidades/santurban/sub_categories/actividades";
@@ -57,6 +61,9 @@ const Router = ({ children }) => (
           <Route path="/comunidades" component={Comunidades} />
           <Route exact path="/comunidades-teusaca" component={Teusaca} />
           <Route exact path="/comunidades-baru" component={Baru} />
+          <Route exact path="/comunidades-uniandes" component={uniandes} />
+          <Route exact path="/comunidades-eje-ambiental" component={eje} />
+          <Route exact path="/comunidades-boyaca" component={Boyaca} />
           <Route
             exact
             path="/comunidades-teusaca-actividades"

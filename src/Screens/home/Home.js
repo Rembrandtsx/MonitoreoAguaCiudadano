@@ -18,13 +18,14 @@ class Content extends Component {
                 <div className="detail">
                     <div className="description">
                         <h1>Monitoreo de Agua en Colombia</h1>
-                        Desarrollar una herramienta que nos permita conocer las
-                        condiciones de calidad del agua en comunidades
-                        vulnerables. Con esta herramienta se busca poder
-                        monitorear las cuencas hidrográficas permitiéndonos
-                        generar alertas tempranas ante posibles fuentes de
-                        contaminación en las cuencas.
-                    <br></br><br></br><br></br>
+                        <p className="justified">
+                            Los conflictos socio-ambientales en Colombia asociados a las interacciones entre minería, agricultura y provisión de agua traen consigo varios retos analíticos asociados a i) los actores involucrados, ii) sus posibles estrategias de acción,  iii) el entorno físico y de reglas (instituciones) que gobiernan esas interacciones, y iv) el acceso a tecnologías para medición. Para lograr  generar dinámicas de diálogo entre los actores públicos asociados a estos retos se promueven acciones de colaboración abierta distribuida para ayudar a determinar el impacto de actividades económicas relacionadas con la extracción y explotación de recursos naturales en Colombia.
+                            <br></br>
+                            La creación del proyecto de Monitoreo Ciudadano a recursos hídricos nace como una apuesta a estas acciones colaborativas para empoderar comunidades en el uso de sondas de agua que les permitan obtener mediciones de parámetros de calidad del agua, además de detección de metales pesados: Mercurio, Cadmio, Arsénico y Plomo. La ida es un codiseño de sondas entre una comunidad científica y los usuarios de los recursos hídricos en un dialogo transversal en que la ciencia, la tecnología y el entendimiento del comportamiento humano mejoren la valoración del agua, a través de un mejor conocimiento de su estado. A través de la tecnología y de herramientas para la toma de decisiones se buscaría mejorar la visibilidad del problema entre las comunidades y mejorar el diálogo con otros actores de la industria y el gobierno buscando tener un impacto positivo en las políticas públicas relacionadas con el uso de los recursos naturales.
+                            <br></br>
+                            Desde el 2006 la universidad de los Andes y colaboradores externos han trabajado en varias comunidades en Santurban (Santander), Amazonas, y el eje ambiental del centro de Bogotá, El campus de la Universidad de los Andes y la Isla de Barú para crear un espacio de aprendizaje para el uso personal de las sondas de agua (AguaSense), el manejo de los datos y la plataforma de visibilización. Además de usar este ejercicio como una puesta de educación STEM donde las competencias técnicas se ponen directamente al servicio de las escuelas y sus facilitadores de conocimiento, generando un proceso de sensibilización, montaje y uso de las sondas. El proyecto espera que los jóvenes sean un motor continuo y activo para mantener las actividades de monitoreo en recursos hídricos y que estos profesionales en formación que a través de proyectos de tesis e investigación aporten a que las tecnologías de monitoreo de bajo costo sean apropiadas por las comunidades de usuarios del agua en Colombia.
+                        </p>
+                        <br></br><br></br><br></br>
                         <div className="map_container">
                             <Mapa />
                             <div className="perimetro">
@@ -38,7 +39,7 @@ class Content extends Component {
                             </div>
                         </div>
                     </div>
-                    
+
                     <style jsx>{`
                         h1 {
                             margin-top: 0;
@@ -135,9 +136,10 @@ class Content extends Component {
                                 width: 100%;
                             }
                         }
+                        
                     `}</style>
                 </div>
-               
+
             </div>
         );
     }

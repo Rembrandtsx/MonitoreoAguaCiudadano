@@ -277,4 +277,32 @@ img{
   
   .accordion > .card .card-header {
 	margin-bottom: -1px;
-  }
+	}
+	.justified{
+		text-align: justify;
+	}
+	.reference{
+		font-size: 0.8em;
+	}
+	.image-container {
+    position: relative;
+    width: 100%;
+}
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+		color: #FFF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(0, 0, 0, .6);
+		font-size: 1.5em;
+		transition: all 0.3s ease-out;
+}
+.image-container:hover .after {
+	background: rgba(0, 0, 0, .8);
+}
