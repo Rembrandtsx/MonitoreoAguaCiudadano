@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div>
         <div className="detail">
-          <div className="description">
+          <div className="description justified">
             <h2>Aplicaciones</h2>
             <p>En esta sección se describen las versiones de las interfaces para las sondas de agua: Calprobe y Calprobe2 la cual es una herramienta para los usuarios de SensoAgua 2 y SensoAgua 3. Con esta aplicación los usuarios de SensoAgua van a estar en capacidad de conocer las mediciones de cuatro variables de calidad de agua, las variables medidas se pueden enviar por mensaje de texto o correo electrónico. Todas las mediciones se envian con la localización geografica donde se realizó la medición. </p>
             <br />

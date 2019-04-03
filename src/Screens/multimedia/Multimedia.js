@@ -8,7 +8,7 @@ class Multimedia extends Component {
     const { color_grey_light_1, color_grey_light_2, shadow_light } = colors;
     return (
       <div className="detail">
-        <div className="description">
+        <div className="description justified">
           <h1>NOTICIAS</h1>
           <p>A continuación, se lista el registro que en medios periodísticos y en redes sociales ha tenido el proyecto y el trabajo con comunidades.</p>
 

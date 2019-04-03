@@ -23,7 +23,7 @@ class Subir extends Component {
         // Read file:
         var file = acceptedFile[0];
         var reader = new FileReader();
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             var data = e.target.result;
             try {
                 var wb = XLSX.read(data, { type: 'binary', raw: true });
@@ -94,72 +94,77 @@ class Subir extends Component {
                 <div className="subir">
                     <div className="description justified">
                         <div className="instrucciones">
-                        <h1>Cargar Datos</h1>
+                            <h1>Cargar Datos</h1>
                             <p>
-                                En este enlace se encuentra la descripción para cargar mediciones. Las mediciones adquiridas con la app móvil deben registrarse por cada usuario en un archivo de Excel. Este archivo debe cargarse manualmente en formato CSV a la página Web. 
-                                El formato que deben tener se presenta a continuación: 
+                                En este enlace se encuentra la descripción para cargar mediciones. Las mediciones adquiridas con la app móvil deben registrarse por cada usuario en un archivo de Excel. Este archivo debe cargarse manualmente en formato CSV a la página Web.
+                                El formato que deben tener se presenta a continuación:
                             </p>
                             <img src={captura} className="captura" />
                             <p>
-                            
-
- 
-
-Se puede descargar una plantilla en Excel para que la use de modelo <a href={plantilla}>aquí</a> <br></br>
-
- 
-
-Los parámetros de esta plantilla son:
 
 
 
 
+                                Se puede descargar una plantilla en Excel para que la use de modelo <a href={plantilla}>aquí</a> <br></br>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+                                Los parámetros de esta plantilla son:
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                             </p>
                             <ul className="indent">
-                            <li>
-                            Fecha_y_hora: La fecha y hora en la cual fue tomado el dato, en el formato exacto "DD/MM/AAAA HH:mm:ss" 
+                                <li>
+                                    Fecha_y_hora: La fecha y hora en la cual fue tomado el dato, en el formato exacto "DD/MM/AAAA HH:mm:ss"
                             </li>
-                            <li>
-                             Longitud: La longitud de la ubicación en donde fue tomado el dato    
+                                <li>
+                                    Longitud: La longitud de la ubicación en donde fue tomado el dato
                             </li>
-                            <li>
-                              Latitud: La latitud de la ubicación en donde fue tomado el dato   
+                                <li>
+                                    Latitud: La latitud de la ubicación en donde fue tomado el dato
                             </li>
-                            <li>
-                             Imei: El código único que referencia al celular que tomo el dato    
+                                <li>
+                                    Imei: El código único que referencia al celular que tomo el dato
                             </li>
-                            <li>Hg: Mercurio (Resolución No. 2115 de 2007.) </li>
-                            <li>Temperatura: Temp (°C) </li>
-                            <li>Conductividad: Conductividad (uS/cm) </li>
-                            <li>Od: Oxígeno disuelto (mg/L) </li>
-                            <li>pH: pH (adimensional) </li>
-                            <li>
-                                Comunidad: La comunidad a la cual pertenecen los datos: 
+                                <li>Hg: Mercurio (Resolución No. 2115 de 2007.) </li>
+                                <li>Temperatura: Temp (°C) </li>
+                                <li>Conductividad: Conductividad (uS/cm) </li>
+                                <li>Od: Oxígeno disuelto (mg/L) </li>
+                                <li>pH: pH (adimensional) </li>
+                                <li>
+                                    Comunidad: La comunidad a la cual pertenecen los datos:
                                 <ul className="indent">
-                                    <li>1: Santurban</li>
-                                    <li>2: Teusaca</li>
-                                    <li>3: Amazonas</li>
-                                </ul>
-                            </li>
-                        </ul>
+                                        <li>1: Santurban</li>
+                                        <li>2: Teusaca</li>
+                                        <li>3: Amazonas</li>
+                                        <li>4: Campus Uniandes</li>
+                                        <li>5: Eje Ambiental</li>
+                                        <li>6: Barú</li>
+                                        <li>7: Boyacá</li>
+
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                         <div className="dropzone">
                             <Dropzone
@@ -192,7 +197,7 @@ Los parámetros de esta plantilla son:
                             <div>
                                 {this.state.errores.length > 0 &&
                                     `Se encontraron ${
-                                        this.state.errores.length
+                                    this.state.errores.length
                                     } errores:`}
                             </div>
                             {this.state.errores.map(error => {
@@ -210,7 +215,7 @@ Los parámetros de esta plantilla son:
                             <div>
                                 {this.state.exitos.length > 0 &&
                                     `Se subieron ${
-                                        this.state.exitos.length
+                                    this.state.exitos.length
                                     } registros:`}
                             </div>
                             {this.state.exitos.map(exito => {
@@ -224,7 +229,7 @@ Los parámetros de esta plantilla son:
                                 );
                             })}
                         </div>
-                
+
                     </div>
 
                     <style jsx>{`
@@ -285,7 +290,7 @@ Los parámetros de esta plantilla son:
                         }
                     `}</style>
                 </div>
-                
+
             </div>
         );
     }

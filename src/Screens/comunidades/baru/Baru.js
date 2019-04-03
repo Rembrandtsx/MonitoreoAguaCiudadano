@@ -13,6 +13,7 @@ import fundahernan from "./img/Colaboradores_patrocinadores/fundahernan.jpeg"
 import idrc from "./img/Colaboradores_patrocinadores/idrc.png"
 import UCartagena from "./img/Colaboradores_patrocinadores/UCartagena.jpg"
 import uniandes from "../comunidadesGen/logo-uniandes.png"
+import mapa from '../comunidadesGen/mapa.png';
 
 class Proyecto6 extends Component {
   render() {
@@ -28,7 +29,10 @@ class Proyecto6 extends Component {
       <div className="detail">
         <div className="description">
           <h2>Barú</h2>
-          <Mapa />
+            <div className="image-container">
+									<img src={mapa} />
+									<div className="after">PROXIMAMENTE</div>
+				</div>
           <p>
             Por medio de diferentes actividades se pretende desarrollar un proceso
              de empoderamiento comunitario para el desarrollo de una red de
