@@ -17,7 +17,7 @@ class Equipo extends Component {
 				<div className="detail">
 					<div className="description">
 						<h1>Sondas</h1>
-						<p className="justified">Aguasense es una sonda de agua que permite la medición de 1,4 y 6 parámetros físico químicos: pH, Conductividad, temperatura, C=2 y turbiedad. Esta consta de componentes electrónicos, una interfaz vía un app móvil y una plataforma de visualización donde se registran la posición donde fueron tomadas las medidas y los valores estimados de esos parámetros. 
+						<p className="justified">Aguasense es una sonda de agua que permite la medición de 1,4 y 6 parámetros físico químicos: pH, Conductividad, temperatura, oxigeno disuelto y turbiedad. Esta consta de componentes electrónicos, una interfaz vía un app móvil y una plataforma de visualización donde se registran la posición donde fueron tomadas las medidas y los valores estimados de esos parámetros. 
 						</p>
 						<center>
 

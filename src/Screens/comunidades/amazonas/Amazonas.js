@@ -111,7 +111,7 @@ class Proyecto3 extends Component {
               <img src={fourteen} className="imagen" />
             </div>
           </Carousel>
-          <h3>Patrocinadores</h3>
+          <h3>Patrocinadores y Colaboradores</h3>
           <div className="patrocinadores">
             <div className="img_container">
               <img src={bath} alt="" className="patrocinador" />
