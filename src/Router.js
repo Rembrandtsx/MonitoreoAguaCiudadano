@@ -43,6 +43,7 @@ import SensoaguaV2 from "./Screens/sensoagua/SensoaguaV2";
 import SensoaguaV3 from "./Screens/sensoagua/SensoaguaV3";
 
 import Perimetro from "./Screens/perimetro/Perimetro";
+import Privacidad from "./Screens/app/Privacidad";
 
 ReactGA.initialize("UA-000000000-0");
 
@@ -64,6 +65,8 @@ const Router = ({ children }) => (
           <Route exact path="/comunidades-uniandes" component={uniandes} />
           <Route exact path="/comunidades-eje-ambiental" component={eje} />
           <Route exact path="/comunidades-boyaca" component={Boyaca} />
+          <Route exact path="/privacidad" component={Privacidad} />
+
           <Route
             exact
             path="/comunidades-teusaca-actividades"

@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { bp, colors } from "../../theme";
-import app_store from "./images/app_store.svg";
 import play_store from "./images/google_play.png";
 import pantallazo1 from "./images/pantallazo.png";
 import pantallazo2 from "./images/Calprobe.png";
-import Footer from "../../components/footer/Footer";
-
+import { Link } from 'react-router-dom';
 class App extends Component {
   render() {
     const { bp_large, bp_medium, bp_small } = bp;
@@ -33,6 +31,7 @@ class App extends Component {
             <div className="logo">
               <img className="logos" src={play_store} />
             </div>
+            <Link to="./privacidad">Política de privacidad de la aplicación</Link>
           </div>
           <style jsx>{`
             .detail {
