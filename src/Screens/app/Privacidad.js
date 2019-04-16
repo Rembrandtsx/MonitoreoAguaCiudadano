@@ -11,19 +11,19 @@ class Privacidad extends Component {
         <div className="detail">
           <div className="description justified">
             <h1>Política de privacidad de la aplicación</h1>
-                 
-            <p>  
-            <br/><br/><b>NOTA DE RESERVA DE DERECHOS DE PROPIEDAD INTELECTUAL:</b> 
+
+            <p>
+            NOTA DE RESERVA DE DERECHOS DE PROPIEDAD INTELECTUAL: 
 
 © - Derechos Reservados: Las bases o bancos de datos, contenidos digitales de todo tipo, y demás información que se encuentra y reposa en el presente repositorio electrónico, o puesta a disposición a través del Sitio Web denominado "Monitoreo Ciudadano" https://monitoreociudadano.uniandes.edu.co/, sus contenidos, interfaces, Look and Feel, herramientas, Software y demás materiales se encuentran protegido por las normas internacionales y nacionales vigentes sobre propiedad Intelectual, por lo tanto su utilización, reproducción, comunicación pública, transformación, distribución, puesta a disposición, alquiler, préstamo público e importación, total o parcial, en todo o en parte, en formato impreso o digital se encuentran prohibidos, y solo serán lícitos en la medida en que se cuente con la autorización previa y expresa por escrito de la Universidad de los Andes. Las limitaciones y excepciones al Derecho de Autor, solo serán aplicables en la medida en que se den dentro de los denominados Usos Honrados (Fair use); es decir siempre y cuando estén previa y expresamente establecidas en disposición legal; no causen un grave e injustificado perjuicio a los intereses legítimos del autor o titular; y no atenten contra la normal explotación de la obra. 
 
-<br/><br/><b>CONDICIONES DE USO DEL ACCESO A LA BASE DE DATOS DENOMINADA SITIO WEB</b> "Monitoreo Ciudadano" https://monitoreociudadano.uniandes.edu.co/ 
+CONDICIONES DE USO DEL ACCESO A LA BASE DE DATOS DENOMINADA SITIO WEB "Monitoreo Ciudadano" https://monitoreociudadano.uniandes.edu.co/ 
 
  - Las bases o bancos de datos automatizados o no, información o contenidos sometido a tratamiento informático o cualquier clase de repositorios electrónicos, puesto a disposición de terceros – usuarios, están protegidos por la normatividad vigente nacional e internacional por la disciplina del Derecho de Autor, en tanto existe esfuerzo intelectual en la organización y selección de la información que las componen; y se ha invertido tiempo y recursos económicos y humanos en su elaboración por parte de Universidad de los Andes y/o terceros con que esta tenga acuerdos o convenios. Como quiera que los registros bibliográficos, las sistemáticas, tesauros, buscadores, motores y demás herramientas, del Sistema, están protegidos por las normas vigentes sobre propiedad intelectual, su uso o utilización por parte de cualquier tercero, requiere la autorización previa y expresa de la Universidad de los Andes, donde se establezca de manera clara y precisa las condiciones de tal uso, el termino de duración de tal autorización; reservándose la Universidad de los Andes, la facultad de revocar o limitar tal autorización sin que deba motivar o justificar tal decisión. 
 
-- Como quiera que las diversas utilizaciones, consultas y accesos a estos registros, contenidos, bases de datos, etc., se dan a través de medios físicos tangibles, o de archivos o repositorios electrónicos, la red mundial de información (Internet), de bibliotecas virtuales y/o digitales, a través de redes cerradas (Intranets), o por intermedio de las denominadas Web 2.0 y Web 3.0, la Universidad de los Andes ha establecido una serie de normas de uso de sus servicios de red y de Tecnologías de Información y Comunicaciones; los cuales deben ser tenidas en cuenta por cualquier persona que utilice o haga uso de tales recursos.  El texto completo de las Normas para el Uso de Servicios de Tecnología Informática y Telecomunicaciones de la Universidad de los Andes (NUSTIT), también puede ser consultado en: <a href="http://secretariageneral.uniandes.edu.co/images/documents/ReglamentoTecnologia.pdf  ">http://secretariageneral.uniandes.edu.co/images/documents/ReglamentoTecnologia.pdf</a>  
+- Como quiera que las diversas utilizaciones, consultas y accesos a estos registros, contenidos, bases de datos, etc., se dan a través de medios físicos tangibles, o de archivos o repositorios electrónicos, la red mundial de información (Internet), de bibliotecas virtuales y/o digitales, a través de redes cerradas (Intranets), o por intermedio de las denominadas Web 2.0 y Web 3.0, la Universidad de los Andes ha establecido una serie de normas de uso de sus servicios de red y de Tecnologías de Información y Comunicaciones; los cuales deben ser tenidas en cuenta por cualquier persona que utilice o haga uso de tales recursos.  El texto completo de las Normas para el Uso de Servicios de Tecnología Informática y Telecomunicaciones de la Universidad de los Andes (NUSTIT), también puede ser consultado en: http://secretariageneral.uniandes.edu.co/images/documents/ReglamentoTecnologia.pdf   
 
-<br/><br/><b>DESCARGO DE RESPONSABILIDAD - DISCLAIMER </b>
+DESCARGO DE RESPONSABILIDAD - DISCLAIMER 
 
 - La Universidad de los Andes, a través del Sistema de bases de datos o repositorios diseñados, al igual que los demás bancos o bases de datos que administra la Universidad, actúa como un tercero de buena fe, exento de culpa, y por lo tanto no responde por la veracidad o exactitud de los datos o contenidos puestos a disposición, cuando los mismos han sido nutridos por terceros, o cuando la información es suministrada por fuentes externas o la información o contenidos han sido sometido a tratamiento informático. Así mismo, no compromete su responsabilidad en cuanto a la idoneidad, o calidad de los mismos. Tampoco asumirá responsabilidad alguna, por el constante o buen funcionamiento, disponibilidad, desempeño de servidores, redes de valor agregado o telemático, servicios convergentes, motores de búsqueda, o mantenimiento frente a la conexión o recursos técnicos utilizados tanto para brindar acceso como para hacerlo y prestarlo de manera efectiva a un tercero, en este caso a todos los usuarios en general. Con base en lo anterior,  La Universidad de los Andes no garantiza que la base de datos, sus aplicativos y/o la información que contenga la misma esté libre de errores o vaya a operar sin interrupción. UNIANDES no tendrá obligación en prestar mantenimiento a los aplicativos de la base de datos, no prestará ni estará obligada a dar soporte técnico ni a solucionar problemas causados en hardware o software de equipos o conexiones de terceros en los cuales se utilice la base de datos.   
 
@@ -42,27 +42,28 @@ En consecuencia, es la Universidad de los Andes, como titular de derechos sobre 
 
 CONFIDENCIALIDAD: Todas y cada una de las personas que administran, manejen, actualicen o tengan acceso a informaciones de cualquier tipo que se encuentre en bases o bancos de datos, o cualquier clase de repositorios electrónicos, se comprometen a conservar y mantener de manera estrictamente confidencial y no revelarla a terceros, todas las informaciones personales, contables, técnicas, comerciales o de cualquier otro tipo suministradas en la ejecución y ejercicio de sus funciones, incluyendo de manera enunciativa y no taxativa, las fórmulas, procedimientos, técnicas, Know - How y demás informaciones en general a que puedan tener acceso PARAGRAFO: La Cláusula de confidencialidad del presente Convenio, se deberán regir y estarán sujetos a la reglamentación sobre Informaciones Confidenciales y Secretos Empresariales de que tratan los artículos 260 a 266 de la Decisión 486 de 2000 de la Comisión del Acuerdo de Cartagena, que creó un Régimen Común Sobre Propiedad Industrial para los cinco países del pacto Andino (Hoy Comunidad Andina de Naciones-CAN). 
 
-<br/><br/><b>CONDICIONES DE ACCESO Y USO AL SITIO WEB</b> "Monitoreo Ciudadano" https://monitoreociudadano.uniandes.edu.co/ A través de los medios físicos, electrónicos, digitales, conocidos o por conocer que se utilicen para acceder o utilizar el Sitio Web y sus contenidos, bases de datos, requerirá previa suscripción, de cualquier usuario podrá acceder a los contenidos e informaciones de la base de datos. Así mismo, y previo el cumplimiento de los requisitos establecidos podrá obtener autorizaciones de uso y licencias on-line u off-line. 
+CONDICIONES DE ACCESO Y USO AL SITIO WEB "Monitoreo Ciudadano" https://monitoreociudadano.uniandes.edu.co/ A través de los medios físicos, electrónicos, digitales, conocidos o por conocer que se utilicen para acceder o utilizar el Sitio Web y sus contenidos, bases de datos, requerirá previa suscripción, de cualquier usuario podrá acceder a los contenidos e informaciones de la base de datos. Así mismo, y previo el cumplimiento de los requisitos establecidos podrá obtener autorizaciones de uso y licencias on-line u off-line. 
 
 Las condiciones de acceso y uso de la información allí disponible, están supeditadas a las disposiciones legales vigentes aplicables, así como a los principios de buena fe y uso lícito por parte del Usuario, prohibiéndose expresa y taxativamente cualquier tipo de actuación que pudiera ir en detrimento o perjuicio de los derechos e intereses de la Universidad de los Andes. 
 
 Los contenidos y servicios ofrecidos en el presente Sitio Web, así como el acceso a contenidos, y a la presente base o banco de datos, así como las licencias de uso y demás autorizaciones, exigen la previa suscripción y registro como usuario y aceptación de las condiciones de uso implementadas por el editor y Director de la publicación. En todo lo pertinente se aplicarán las condiciones de uso, salvaguarda de derechos de propiedad intelectual, información confidencial, aplicación y remisión a las normas sobre comercio electrónico, tratamiento de datos personales, delitos informáticos, y descargo de responsabilidad. 
 
-<br/><br/><b>REGISTRO DE USUARIO </b>
+REGISTRO DE USUARIO 
 
 De conformidad con lo dispuesto anteriormente, el acceso al presente Sitio Web, y a las páginas Web y base de datos que lo componen se reserva algunos de los Servicios ofrecidos a través de su sitio Web, a los Usuarios Registrados mediante el diligenciamiento y aceptación de las condiciones generales de uso del correspondiente formulario de registro de Usuarios. 
 
 El Usuario se compromete a seleccionar, usar y conservar su nombre de usuario o "login", su contraseña, password o keyword (en adelante y de modo conjunto las "Claves de Acceso") de conformidad con lo establecido en las cláusulas siguientes. 
 
-<br/><br/><b>CONTENIDO Y ACTUACIONES DEL USUARIO </b>
+CONTENIDO Y ACTUACIONES DEL USUARIO 
 
 El Usuario se compromete a hacer un uso lícito, diligente, honrado y correcto de toda  información o contenido al que tenga acceso a través del Sitio Web "Monitoreo Ciudadano" https://monitoreociudadano.uniandes.edu.co/, sus páginas Web, las bases o bancos de datos y sus contenidos o de terceros previamente proporcionados (Vínculos, hipervínculos, links, deep links etc.) y todo ello bajo los principios de la buena fe y con respeto en todo momento de la normatividad legal vigente y aplicable. 
 
 El Usuario deberá abstenerse de provocar de manera maliciosa o intencionada daños o perjuicios que puedan menoscabar, alterar, destruir o inutilizar las bases de datos y/o sus contenidos; así como no introducir, ni difundir los denominados virus informáticos, gusanos, malware, spyware, etc., que puedan producir alteraciones no autorizadas de los contenidos o sistemas integrantes de la base de datos. Con base en lo anterior, el Centro de Datos no asume responsabilidad y se exonera de cualquier tipo de fallo o virus informático introducido por terceros. 
 
  
-                </p>
-       
+
+            </p>
+
 
           </div>
           <style jsx>{`
