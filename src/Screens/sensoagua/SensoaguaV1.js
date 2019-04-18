@@ -11,13 +11,15 @@ class SensoaguaV1 extends Component {
 				<div className="description justified">
 					<h3>Sensoagua V1</h3>
 					<p>
-					Sensoagua versión 1 (Sensoagua V1) fue desarrollado en el 2015 con el propósito de medir temperatura y conductividad. Esta sonda de dos parámetros cuenta con módulos de electrónica de adquisición, comunicación y alimentación. La interface a usuario es a través de un applicativo web (https://economia.uniandes.edu.co/centros-de-investigacion/cede/web-de-proyectos-cede/santurban-visible)y los datos son visibilizados en  WEB page monitoreo ciudadano 
+					Sensoagua versión 1 (<i> Sensoagua V1</i>) fue desarrollado en el 2015 con el propósito de medir temperatura y conductividad. Esta sonda de dos parámetros cuenta con módulos de electrónica de adquisición, comunicación y alimentación. La interface del usuario es a través de un aplicativo web (<a href="https://economia.uniandes.edu.co/centros-de-investigación/cede/web-de-proyectos-cede/Santurbán-visible" target="_blank">https://economia.uniandes.edu.co/centros-de-investigación/cede/web-de-proyectos-cede/Santurbán-visible</a>)y los datos son visualizados la página de monitoreo ciudadano 
+
+
 
 
 					</p>
 					<p>&nbsp;</p>
 					<p>
-					Esta versión permite dos formas de programación de medida: en un punto fijo tomando mediciones manuales o programando el intervalo de medida en el aplicativo para adquirir varias medidas en un intervalo especifico de tiempo por ejemplo 30 medidas en una hora.  El primero permite que sensoagua V1 pueda ser ubicado en un punto determinado donde manualmente el usuario tome una o varias medidas. En el segundo, el usuario puede especificar el intervalo de medida y dejar sensoaguav1 en el punto de interés. En este caso las mediciones que programa el usuario las cuales se realizan de forma continua. 
+					Esta versión cuenta con dos formas de programación de medida: en un punto fijo tomando mediciones manuales o programando el intervalo de medida en el aplicativo para adquirir varias medidas en un intervalo especifico de tiempo por ejemplo 30 medidas en una hora.  El primero permite que <i> Sensoagua V1</i> pueda ser ubicado en un punto determinado donde manualmente el usuario tome una o varias medidas. En el segundo, el usuario puede especificar el intervalo de medida y dejar sensoaguav1 en el punto de interés. En este caso las mediciones que programa el usuario las cuales se realizan de forma continua. 
 					</p>
 					<center>
 						<img src={Sensoaguav1} />
