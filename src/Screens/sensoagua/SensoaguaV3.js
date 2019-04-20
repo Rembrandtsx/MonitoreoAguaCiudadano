@@ -11,10 +11,7 @@ class SensoaguaV3 extends Component {
         <div className="description justified">
           <h3>Sensoagua V3</h3>
           <p>
-            <strong>Subsistema de Sensores</strong>
-          </p>
-          <p>
-          Sensoagua versión 3 (Sensoagua V3)   fue desarrollado en el 2017-2018. Esta versión partío de la versión anterior Sensoagua versión 2 y se adicionaron un canal para la detección de Mercurio utilizando la técnica de voltoamperometría de separación anódica de onda cuadrara (SWASV) y dos configuraciones para el sensor de conductividad:  inductiva y capacitiva. En esta se exploran técnicas de fabricación basada en impresión 3 D conductiva (ULTIMAKER 3D EXTENDED). A la interface del aplicativo móvil se adicionan los canales de adquisición de detección de mercurio y de su comparación con la Resolución No. 2115 de 2007 de legislación Colombiana. 
+          Sensoagua versión 3 (<i>Sensoagua V3</i>)   fue desarrollado en el 2017-2018. Esta versión partió de la versión anterior Sensoagua versión 2 y se adicionaron un canal para la detección de Mercurio utilizando la técnica de voltamperometría de separación anódica de onda cuadrara (SWASV) y dos configuraciones para el sensor de conductividad:  inductiva y capacitiva. En esta se exploran técnicas de fabricación basada en impresión 3D conductiva (ULTIMAKER 3D EXTENDED). A la interface del aplicativo móvil se adicionan los canales de adquisición de detección de mercurio teniendo como base la Resolución No. 2115 de 2007 de legislación colombiana. 
           </p>
 
           <p>
