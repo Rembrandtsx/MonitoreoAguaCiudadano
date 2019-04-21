@@ -59,13 +59,13 @@ class Proyecto3 extends Component {
           </p>
           <ul>
             <li>
-            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
+            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes.
             </li>
             <li>
-            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
+            Taller en Amacayacu donde participaron representes de parques Nacionales.
             </li>
             <li>
-            Taller de organizaciones Sinchi, parques Nacionales, SENA y Representantes de Bath Univesity y Universidad de los Andes 
+            Actividades de monitoreo con la comunidad de Santa Sofia: líderes, mujeres y jóvenes. 
             </li>
           </ul>
       
