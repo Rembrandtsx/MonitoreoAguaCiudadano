@@ -7,7 +7,7 @@ import husserl from './Equipo de trabajo/Husserl-Johanna.jpg';
 import jaime from './Equipo de trabajo/Jaime_PEREZ.jpg';
 import jannis from './Equipo de trabajo/Jannis_Wenk.jpg';
 import jose from './Equipo de trabajo/Jose_Lopez.jpg';
-import juan from './Equipo de trabajo/Juan_Cardenas.jpg';
+import juan from './Equipo de trabajo/Juan_Cardenas.JPG';
 import pedro from './Equipo de trabajo/Pedro_Estrela.jpg';
 import sebastian from './Equipo de trabajo/Sebastian_arevalo.jpg';
 import juanfelipe from './Equipo de trabajo/Juan_Felipe_Orti.jpg';
